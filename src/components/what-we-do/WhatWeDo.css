@@ -1,0 +1,44 @@
+.whatWeDo-container {
+    background-color: rgb(236, 235, 233);
+    padding: 50px;
+    margin-bottom: 0%;
+
+}
+
+.whatWeDo-text h2 {
+    font-size: 38px;
+    font-family: "Rubik", sans-serif;
+    color: #7f8c8d;
+    margin: 0%;
+    display: inline-block; /* To ensure box-shadow works properly */
+    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* box-shadow: 0px 0px 14px -7px #f09819; */
+}
+
+.whatWeDo-text p {
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    color: #535353;
+    line-height: 1.6;
+    margin-top: 8px;
+
+}
+.button-group{
+    background-color: #faf9f7 ;
+    padding: 20px;
+    border: 0;
+    margin-left: 2px;
+    font-size: 16px;
+    font-weight:400;
+    color:#535353;
+    border: 1px solid #c1c4c4;
+   
+}
+.button-group:hover{
+    cursor: pointer;
+
+}

@@ -1,0 +1,183 @@
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+  }
+  
+  
+.inside-slide-div{
+    height: 400px;
+    width:90%;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.inside-slide-div div{
+    display: flex;
+    padding-left: 100px;
+    padding-top: 50px;
+    flex-direction: column;
+}
+.inside-slide-div div h1{
+    font-size:50px;
+    font-weight: 900;
+    font-family: "Archivo Black", sans-serif;
+    color: beige;
+    margin-bottom: 0;
+}
+.inside-slide-div div h3{
+    font-size: 22px;  
+    font-weight: 300;
+    
+    font-family: "Archivo Black", sans-serif;
+    color: beige;
+    margin-top: 0;
+}
+.inside-slide-div div button {
+  width: 170px !important;
+  margin: 10px !important;
+  padding: 15px 30px !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  transition: 0.5s !important;
+  background-size: 200% auto !important;
+  color: white !important;
+  border-radius: 10px !important;
+  display: block !important;
+  border: 0px !important;
+  font-weight: 700 !important;
+  /* box-shadow: 0px 0px 14px -7px #f09819; */
+  box-shadow: 0px 0px 14px -7px #673FD7 !important;
+  /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%); */
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%) !important;
+  
+  cursor: pointer !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  touch-action: manipulation !important;
+  
+}
+
+.inside-slide-div div button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.inside-slide-div div button:active {
+  transform: scale(0.95);
+}
+    
+  
+  //////////////////////
+  .each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+}
+
+.inside-slide-div {
+  height: 400px;
+  width: 90%;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  position: absolute;
+  bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.inside-slide-div div {
+  display: flex;
+  padding-left: 100px;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+.inside-slide-div div h1 {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+  color: beige;
+  margin-bottom: 0;
+}
+
+.inside-slide-div div h3 {
+  font-size: 22px;
+  font-weight: 300;
+  font-family: "Archivo Black", sans-serif;
+  color: beige;
+  margin-top: 0;
+}
+
+.inside-slide-div div button {
+  width: 170px !important;
+  margin: 10px !important;
+  padding: 15px 30px !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  transition: 0.5s !important;
+  background-size: 200% auto !important;
+  color: white !important;
+  border-radius: 10px !important;
+  display: block !important;
+  border: 0px !important;
+  font-weight: 700 !important;
+  box-shadow: 0px 0px 14px -7px #673FD7 !important;
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%) !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  touch-action: manipulation !important;
+}
+
+.inside-slide-div div button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.inside-slide-div div button:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 1024px) {
+  .each-slide-effect > div {
+    height: 350px;
+  }
+
+  .inside-slide-div {
+    height: 300px;
+  }
+
+  .inside-slide-div div {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .inside-slide-div div h1 {
+    font-size: 32px;
+  }
+
+  .inside-slide-div div h3 {
+    font-size: 18px;
+  }
+
+  .inside-slide-div div button {
+    width: 150px !important;
+    padding: 10px 20px !important;
+    font-size: 14px;
+  }
+}
+
+ 
+

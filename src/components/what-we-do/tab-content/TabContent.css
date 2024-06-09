@@ -1,0 +1,81 @@
+.tab-content-container{
+    margin-top: 30px;
+    font-family: "Rubik", sans-serif;
+    width: 854px;
+}
+.tab-content-left h3{
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom:5px;
+    margin-top: 0;
+    line-height: 1.2;
+    display: inline-block; /* To ensure box-shadow works properly */
+    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.para1{
+    font-size: 16px;
+    margin-bottom:1rem;
+    margin-top:20px;
+    color: #535353;
+    line-height: 1.6;
+}
+.para2{
+    font-size: 16px;
+    margin-bottom:20px;
+    margin-top:0;
+    color: #535353;
+    line-height: 1.6;
+}
+.tab-content-left button {
+    width: 150px !important;
+  margin:0;
+  padding: 10px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 10px;
+  border: 1px solid #5643CC;
+  /* border: 1px solid #FF512F; */
+  display: block;
+  border: 0px;
+  background-color:white;
+  font-weight: 600;
+  /* box-shadow: 0px 0px 14px -7px #f09819; */
+  box-shadow: 0px 0px 14px -7px #673FD7;
+  /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%); */
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: white;
+  
+}
+
+.tab-content-left button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.tab-content-left button:active {
+  transform: scale(0.95);
+}
+.tabName{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color:#C40C0C;
+    margin-bottom: 0;
+}
+.tabTel{
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000
+}

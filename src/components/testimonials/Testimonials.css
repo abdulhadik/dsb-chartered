@@ -1,0 +1,153 @@
+.parent-container {
+  background-color: rgb(236, 235, 233);
+    text-align: center;
+    
+  }
+  .parent-container h1{
+    font-size: 38px;
+    font-family: "Rubik", sans-serif;
+    margin-top: 100px;
+    margin-bottom: 0;
+    display: inline-block; 
+    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+  }
+  .testimonial-header{
+    padding-left: 50px;
+    text-align: center;
+    font-size: 38px;
+    font-family: "Rubik", sans-serif;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: inline-block; 
+    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .testimonial-main-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+  .testimonial-main-container .each-slide-effect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    width: 930px;
+   
+    justify-content: center;
+    height: 275px;
+    margin-top: 0;
+  }
+  
+  .testimonial-text {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    color: #535353;
+    line-height: 1.6;
+    font-family: "Rubik", sans-serif;
+    
+  }
+  
+  .testimonial-container .slideNum {
+    font-family: "Rubik", sans-serif;
+    color: #535353;  
+    font-weight: 500;
+    margin-top: 0;
+  }
+  
+  .testimonial-container h4 {
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 10px; /* Added px unit */
+    font-size: 20px;
+    color: #535353;
+  }
+  .gradient-custom {
+    background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+      linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+      linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+      radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+      radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+  }
+  .carousel-indicators {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+
+  .gradient-custom {
+    /* Adjust the gradient background as needed */
+    /* background: linear-gradient(45deg, #6a11cb, #2575fc); */
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    color: white;
+  }
+  .fas fa-quote-left fa-3x text-white{
+    display: none;
+  }
+  .gradient-custom i{
+    color:#535353;
+  }
+  
+  .text-white {
+    color: white !important;
+  }
+  
+  .rounded-circle {
+    border: 2px solid #fff;
+  }
+  
+  .shadow-1 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .pt-2 {
+    padding-top: 0.5rem !important;
+  }
+  
+  .pb-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  
+  .pb-3 {
+    padding-bottom: 1rem !important;
+  }
+  
+  .px-4 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  .py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+
+  /* custom.css */
+.custom-carousel-indicators li {
+  background-color: red; /* Change the color */
+  width: 15px; /* Change the size */
+  height: 15px; /* Change the size */
+  border-radius: 50%; /* Make them circular */
+}
+
+.custom-carousel-indicators .active {
+  background-color: rgb(255, 255, 255);
+  color: #535353;
+}

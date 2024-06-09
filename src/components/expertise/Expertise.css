@@ -1,0 +1,91 @@
+.expertise-container {
+    padding: 50px;
+    padding-bottom: 0px;
+}
+
+.expertise-text h2 {
+    font-size: 38px;
+    font-family: "Rubik", sans-serif;
+    margin: 0%;
+    display: inline-block;
+    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.expertise-text p {
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    color: #535353;
+    line-height: 1.6;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.icon-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.expertise-card {
+    width: 320px;
+    margin-top: 0;
+    align-self: flex-start;
+    
+}
+
+.icon-heading img {
+    width: 46px;
+    height: 48px;
+}
+
+.expertise-card-h2 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: black;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-bottom: 0%;
+}
+
+.expertise-card-p {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #535353;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.expertise-card a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #673FD7;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+}
+
+.expertise-card a:hover {
+    color: #455EB5;
+}
+
+.expertise-slide-container .each-slide-effect div {
+    height: auto;
+    margin-top: 10px;
+}
+
+.expertise-card-contaner {
+    gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.second-slide .expertise-card-contaner {
+    display: flex;
+    justify-content: flex-start;
+}

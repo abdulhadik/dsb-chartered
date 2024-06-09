@@ -1,0 +1,164 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  /* background-color: #FED8B1; */
+ width:100%;
+  color: #ffffff;
+ 
+  
+  /* padding-right: 200px; */
+  
+  box-shadow: 0px 0px 17px #252525;
+  background-color: rgb(255, 255, 255);
+  
+
+}
+
+.navbarLogo {
+  width:40px;
+  height: auto;
+  margin-right: 10px;
+}
+.bg-body-tertiary{
+  background-color: black;
+}
+.companyName {
+
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #CA4246;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg,
+      #CA4246 16.666%,
+      #E16541 16.666%,
+      #E16541 33.333%,
+      #F18F43 33.333%,
+      #F18F43 50%,
+      #8B9862 50%,
+      #8B9862 66.666%,
+      #476098 66.666%,
+      #476098 83.333%,
+      #A7489B 83.333%);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+  
+
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu li {
+  font-size: 14px;
+  color: rgb(5, 5, 5);
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+
+.dropdownIcon {
+  margin-left: 5px;
+  /* Space between text and icon */
+  font-size: 20px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  color: black;
+  text-transform: capitalize;
+
+}
+
+.navbar-menu li a:hover {
+  transform: scale(1.1);
+  color: #5643CC;
+
+}
+
+
+.navbarLogo:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+
+  40% {
+    background-size: 650%;
+  }
+
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 100%;
+  }
+
+  80% {
+    background-size: 650%;
+  }
+
+  100% {
+    background-size: 650%;
+  }
+}
+
