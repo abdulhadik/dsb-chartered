@@ -43,7 +43,7 @@ const WhatWeDo = () => {
   return (
     <div className='whatWeDo-container'>
       <div className='whatWeDo-text'>
-        <h2>WHAT WE DO</h2>
+        <h2>What we do</h2>
         <p>
           Leading Business & Financial Consultancy firm in Dubai, UAE. DSB Chartered Accountants & Its Associate Professional Firms (DSB Chartered Accountants Group) are ISO 9001-2015 Certified International Chartered Accountants Firms having its headquarters in Dubai.
         </p>

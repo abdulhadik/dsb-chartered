@@ -1,0 +1,54 @@
+.logo-container{
+    display:flex;
+    justify-content:center;
+    padding-inline:50px; 
+    margin-bottom:30px;
+    
+}
+
+.logo-inner-container{
+    display: flex;
+    justify-content: center;
+    
+    gap:30px;
+    align-items: center;
+    border-top:3px solid #89888b9d;
+    padding-top: 20px;
+    flex-wrap:wrap;
+    
+
+}
+
+.logo-images-birla{
+    height: 60px;
+}
+.logo-images-discovery{
+    height: 40px;
+}
+.logo-images-hitachi{
+    height: 30px;
+}
+.logo-images-hudco{
+    height: 70px;
+}
+.logo-images-indianAccounting{
+    height: 70px;
+}
+.logo-images-kei{
+    height: 52px;
+}
+.logo-images-meridien{
+    height: 52px;
+}
+.logo-images-indianOil{
+    height: 70px;
+}
+.logo-images-gail{
+    height: 70px;
+}
+.logo-images-ndts{
+    height:50px;
+}
+.logo-images-lex{
+    height:50px;
+}

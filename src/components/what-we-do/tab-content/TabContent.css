@@ -1,9 +1,10 @@
 .tab-content-container{
     margin-top: 30px;
-    font-family: "Rubik", sans-serif;
-    width: 854px;
+    font-family: "Ubuntu", sans-serif;
+    width: auto;
 }
 .tab-content-left h3{
+    font-family: "Ubuntu", sans-serif;
     font-size: 1.75rem;
     font-weight: 600;
     margin-bottom:5px;
@@ -30,7 +31,7 @@
     line-height: 1.6;
 }
 .tab-content-left button {
-    width: 150px !important;
+    width: 150px;
   margin:0;
   padding: 10px 15px;
   text-align: center;
@@ -78,4 +79,33 @@
     font-size: 16px;
     font-weight: 500;
     color: #000000
+}
+@media (max-width:500px){
+    .tab-content-left h3{
+        font-size:24px;
+        font-weight: 500;
+        margin-bottom: 0px;
+
+    }
+    .tab-content-left p{
+        font-size: 14px;
+        margin-top: 8px;
+        margin-bottom:0px;
+    }
+    .tab-content-left button{
+        margin-top: 15px;
+        font-size: 12px;
+        width: auto;
+        padding:8px 12px;
+
+    }
+    .tabName{
+        font-size: 16px;
+        
+    }
+    .tabTel{
+    font-size:16px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    }
 }

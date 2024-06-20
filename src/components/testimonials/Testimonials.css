@@ -1,32 +1,25 @@
-.parent-container {
-  background-color: rgb(236, 235, 233);
-    text-align: center;
-    
-  }
-  .parent-container h1{
-    font-size: 38px;
-    font-family: "Rubik", sans-serif;
-    margin-top: 100px;
-    margin-bottom: 0;
-    display: inline-block; 
-    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-   
-  }
+
+  
   .testimonial-header{
-    padding-left: 50px;
+    padding-left:50px;
+    padding-top:50px;
+
+  }
+  .testimonial-text{
+    
     text-align: center;
     font-size: 38px;
-    font-family: "Rubik", sans-serif;
-    margin-top: 100px;
+    font-family: "Ubuntu", sans-serif;
+    
     margin-bottom: 40px;
     display: inline-block; 
     /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
     background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    border-left: 8px solid #455db5ce;
+    padding-left:10px;
+    
   }
   .testimonial-main-container {
     width: 90%;
@@ -50,18 +43,23 @@
     margin-top: 0;
   }
   
-  .testimonial-text {
-    font-size: 18px;
-    margin-bottom: 5px;
-    margin-top: 0;
-    color: #535353;
-    line-height: 1.6;
-    font-family: "Rubik", sans-serif;
+  .text-center.mt-4.pt-2{
+    display:none;
+  } 
+  .card-body.px-4.py-5{
     
+    border-radius: 10px;
+    box-shadow:none;
+    box-shadow: inset rgb(168, 168, 168) 0px 0px 20px -16px; 
   }
+  .card{
+    --mdb-card-box-shadow:none;
+    padding-inline:50px;
+  }
+
   
   .testimonial-container .slideNum {
-    font-family: "Rubik", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     color: #535353;  
     font-weight: 500;
     margin-top: 0;
@@ -93,9 +91,7 @@
     background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
     color: white;
   }
-  .fas fa-quote-left fa-3x text-white{
-    display: none;
-  }
+ 
   .gradient-custom i{
     color:#535353;
   }
@@ -107,7 +103,10 @@
   .rounded-circle {
     border: 2px solid #fff;
   }
-  
+  .rounded-circle {
+    height: 150px;
+    width: 150px;
+  }
   .shadow-1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -150,4 +149,50 @@
 .custom-carousel-indicators .active {
   background-color: rgb(255, 255, 255);
   color: #535353;
+}
+@media (max-width:800){
+  .parent-container{
+    font-size:32px;
+  }
+}
+@media (max-width:500px){
+  .parent-container{
+    font-size:30px;
+  }
+  .testimonial-header{
+    padding-left: 20px;
+    
+
+  }
+  .card{
+    padding-inline:20px;
+  }
+  .carousel-control-prev{
+    margin-bottom: 170px;
+  }
+  .carousel-control-next{
+    margin-bottom: 170px;
+  }
+  .mb-4{
+    font-size: 19px;
+    margin-bottom: 17px;
+  }
+  .mb-0{
+    font-size: 13px;
+  }
+  .card-body{
+    padding: 20px 20px;
+  }
+  .rounded-circle {
+    height: 120px;
+    width: 120px;
+  }
+  .testimonial-text{
+    font-size: 26px;
+    border-left: 4px solid #455db5ce;
+    padding-left:10px;
+  }
+  .card-body .px-4 .py-5{
+    padding-top: 0px;
+  }
 }

@@ -11,17 +11,18 @@ function CustomCard () {
   return (
     <div className='customCard'>
     <div className='customCard-text'>
-        <h2>BUSINESS INSIGHT</h2>
+        <h2 className='heading-card'>Business insight</h2>
         <p>
         News & Press Release
         </p>
       </div>
     <div className='card-container'>
-    <Card sx={{ maxWidth: 397 }}>
+    <Card className="card-item">
       <CardActionArea>
         <CardMedia
           component="img"
-          height="213"
+          className='card-media'
+          // height="213"
           image={Card1}
           
         />
@@ -32,13 +33,13 @@ function CustomCard () {
         </CardContent>
       </CardActionArea>
     </Card>
-    <Card sx={{ maxWidth: 397 }}>
+    <Card className="card-item">
       <CardActionArea>
         <CardMedia
           component="img"
-          height="213"
-          image={Card2}
-          
+          className='card-media'
+          // height="213"
+          image={Card2}  
         />
         <CardContent>
            <p className='card-date'>May 16 2024</p> 
@@ -47,11 +48,12 @@ function CustomCard () {
         </CardContent>
       </CardActionArea>
     </Card>
-    <Card sx={{ maxWidth: 397 }}>
+    <Card className="card-item">
       <CardActionArea>
         <CardMedia
           component="img"
-          height="213"
+          className='card-media'
+          // height="213"
           image={Card3}
           
         />
