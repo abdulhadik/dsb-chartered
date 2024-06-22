@@ -37,6 +37,7 @@ const Main = () => {
 
       <WhatWeDo />
       <Expertise/>
+      <Logo/>
       <div className="call">
         <div className="inside-call">
           <div className="left-call">
@@ -52,7 +53,6 @@ const Main = () => {
       </div>
       <Testimonials/>
       <CustomCard/>
-      <Logo/>
      
       </div>
   );
