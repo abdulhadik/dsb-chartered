@@ -1,30 +1,4 @@
-const brandDetails = [
-    {
-        id: 1,
-        brandname: "15+ Years",
-        brandDetails: "In Service",
-    },
-    {
-        id: 2,
-        brandname: "100+",
-        brandDetails: "Fulltime Employees",
-    },
-    {
-        id: 3,
-        brandname: "5000+",
-        brandDetails: "Happy Customers",
-    },
-    {
-        id: 4,
-        brandname: "5000+",
-        brandDetails: "Audits Completed",
-    },
-    {
-        id: 5,
-        brandname: "2000+",
-        brandDetails: "Company Formations",
-    },
-];
+
 
 const tabDetails = [
     {
@@ -34,6 +8,7 @@ const tabDetails = [
         tabPara2: "The importance of Audit & Assurance Services in the UAE is that an audit is escalating with the passage of time. While conducting business there are ample things to review and whistle when things are deviating.",
         tabName: "CA. Name, CEO & Partner",
         tabPhone: "Mob: +971 502828727",
+        ReadMore:'/services',
     },
     {
         id: 1,
@@ -42,6 +17,7 @@ const tabDetails = [
         tabPara2: "We will help you to determine the financial structure and analyze the economic benefits.",
         tabName: "Mr. Name | Partner",
         tabPhone: "Mob: +971 502828567",
+        ReadMore:'/services',
     },
     {
         id: 2,
@@ -50,6 +26,7 @@ const tabDetails = [
         tabPara2: "We provide our accounting services to all business segments and individuals with a better result.",
         tabName: "Mr. Name | Senior Manager",
         tabPhone: "Mob: +971 50 8873115",
+        ReadMore:'/services',
     },
     {
         id: 3,
@@ -58,6 +35,7 @@ const tabDetails = [
         tabPara2: "Mainland, Freezone & Offshore Company Formation in Dubai, UAE -Together we achieve a dream.",
         tabName: "Mr. Name | Partner",
         tabPhone: "Mob: +971 50 35780323",
+        ReadMore:'/services',
     },
     {
         id: 4,
@@ -66,8 +44,9 @@ const tabDetails = [
         tabPara2: "We undertake VAT Registration and help your company to obtain the Tax Registration Number. Guidance & support for VAT Return submission on a quarterly and monthly basis. Our experts will visit your office and make the necessary checks on documents and ensure compliance.",
         tabName: "CA. Name, CEO & Partner",
         tabPhone: "Mob: +971 50 3578031",
+        ReadMore:'/services',
     },
 ];
 
 // Export both constants
-export { brandDetails, tabDetails };
+export {tabDetails};

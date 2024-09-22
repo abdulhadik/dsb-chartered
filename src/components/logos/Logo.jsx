@@ -1,109 +1,172 @@
 import React from "react";
-import './Logos.css';
-import birla from '../../images/logoImage/birlaGroup.png';
-import discovery from '../../images/logoImage/discovery.png';
-import hitachi from '../../images/logoImage/hitachi.png';
-import hudco from '../../images/logoImage/hudco.png';
-import indianAccounting from '../../images/logoImage/indianAccounting.png';
-import kei from '../../images/logoImage/kei.png';
-import meridien from '../../images/logoImage/meridien.png';
-import indianOil from '../../images/logoImage/indianOil.png';
-import gail from '../../images/logoImage/gail.png';
-import ircon from '../../images/logoImage/ircon.png';
-import powergrade from '../../images/logoImage/powergrade.png';
-import webEcreater from '../../images/logoImage/webEcreater.png';
-import icsi from '../../images/logoImage/icsi.png';
-import birlaSugar from '../../images/logoImage/birlaSugar.png';
-import pfc from '../../images/logoImage/pfc.png';
-import lex from '../../images/logoImage/lex.png';
-import ndts from '../../images/logoImage/ndts.png';
-import { Slide } from "react-slideshow-image";
-
-const logosClient1 = [
-  { src: birla, alt: 'Birla Group', className: 'logo-images-birla' },
-  { src: kei, alt: 'KEI', className: 'logo-images-kei' },
-  { src: discovery, alt: 'Discovery', className: 'logo-images-discovery' },
-  { src: hudco, alt: 'HUDCO', className: 'logo-images-hudco' },
-  { src: hitachi, alt: 'Hitachi', className: 'logo-images-hitachi' },
-  { src: icsi, alt: 'icsi', className: 'logo-images-icsi' },
-  
-  { src: indianOil, alt: 'Indian Oil', className: 'logo-images-indianOil' },
-];
-
-const logosClient2 = [
-  { src: meridien, alt: 'Meridien', className: 'logo-images-meridien' },
-  { src: birlaSugar, alt: 'birla Sugar', className: 'logo-images-birlaSugar' },
-  { src: gail, alt: 'GAIL', className: 'logo-images-gail' },
-  { src: ircon, alt: 'IRCON', className: 'logo-images-ircon' },
-  { src: powergrade, alt: 'Powergrade', className: 'logo-images-powergrade' },
-  { src: webEcreater, alt: 'Web Ecreater', className: 'logo-images-webEcreater' },
-  { src: pfc, alt: 'pfc', className: 'logo-images-pfc' }
-];
- const logosPartner1=[
-  { src:lex, alt:'lex', className:"logo-images-lex"},
-  { src: indianAccounting, alt: 'indainAccounting', className: 'logo-images-indianAccounting' },
-  { src:ndts, alt:'ndts', className:"logo-images-ndts"}
-
-
- ];
-const properties = {
-  prevArrow: <button className="buttonlogoStyleLeft"><img alt="Previous" /></button>,
-  nextArrow: <button className="buttonlogoStyleRight"><img alt="Next" /></button>,
-  duration: 3000, // Slide display duration in milliseconds (2 seconds)
-  transitionDuration: 3000,
-};
+import "../../index.css";
+import { motion } from "framer-motion";
+import bms from "../../images/logoImage/bms.png";
+import Bookkeeper from "../../images/logoImage/Bookkeeper.png";
+import Dashmesh from "../../images/logoImage/Dashmesh.png";
+import Edu from "../../images/logoImage/Edu.png";
+import ElectroRak from "../../images/logoImage/ElectroRak.png";
+import Floors from "../../images/logoImage/Floors.png";
+import INextise from "../../images/logoImage/INextise.png";
+import Itrom from "../../images/logoImage/Itrom.png";
+import kashka from "../../images/logoImage/kashka.png";
+import logo from "../../images/logoImage/logo.png";
+import NewEast from "../../images/logoImage/NewEast.png";
+import Picture1 from "../../images/logoImage/Picture1.png";
+import pnb from "../../images/logoImage/pnb.png";
+import Restyle from "../../images/logoImage/Restyle.png";
+import Sai from "../../images/logoImage/Sai.png";
+import SevenHill from "../../images/logoImage/SevenHill.png";
+import winchem from "../../images/logoImage/winchem.png";
+import TheArt from "../../images/logoImage/TheArt.png";
+import vivo from "../../images/logoImage/vivo.png";
+import smj from "../../images/logoImage/smj.png";
+import alyah from "../../images/logoImage/alyah.png";
+import stuart from "../../images/logoImage/stuart.png";
+import vsp from "../../images/logoImage/vsp.png";
+import krestone from "../../images/logoImage/krestone.png";
+import meydan from "../../images/logoImage/meydan.png";
+import rakez from "../../images/logoImage/rakez.png";
 
 function Logo() {
+  const logos = [
+    bms,
+    Bookkeeper,
+    Dashmesh,
+    Edu,
+    ElectroRak,
+    Floors,
+    INextise,
+    Itrom,
+    kashka,
+    logo,
+    NewEast,
+    Picture1,
+    pnb,
+    Restyle,
+    Sai,
+    SevenHill,
+    winchem,
+    TheArt,
+    vivo,
+  ];
+  const logos1 = [smj, alyah, stuart, vsp, krestone];
+  const logos2 = [meydan,rakez];
+
   return (
-  <>
-  <h2 className="logo-heading-client">Our Valuable Clients</h2>
-    <Slide {...properties} className="logo-slider">
-      
-      <div className="each-slide-effects">
-        <div className='logo-container'>
-          <div className='logo-inner-container'>
-            {logosClient1.map((logo, index) => (
-              <img
-                key={index}
-                className={logo.className}
-                src={logo.src}
-                alt={logo.alt}
-              />
-            ))}
+    <div className="logo-main-container text-center mt-[50px] mb-[50px]">
+      <h2 className="logo-heading-client ">Our Clients</h2>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          transition: { duration: 0.6, delay: 0.2, ease: [0.44, 0, 0.56, 1] },
+        }}
+        viewport={{ amount: "some", once: true }}
+        className="w-full flex flex-col items-center justify-center gap-4 px-[20px] sm:px-[60px] "
+      >
+        <div className="relative w-full overflow-hidden">
+          <div
+            className="flex w-full h-[130px] items-center relative"
+            style={{
+              maskImage:
+                "linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 95%)",
+            }}
+          >
+            <ul className="animate-scroll">
+              {logos.concat(logos).map((src, index) => (
+                <li
+                  key={index}
+                  className="flex items-center justify-center w-[121px]"
+                >
+                  <img
+                    src={src}
+                    alt="logo"
+                    className="w-full h-auto object-contain"
+                  />
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-      </div>
-      <div className="each-slide-effects">
-        <div className='logo-container'>
-          <div className='logo-inner-container'>
-            {logosClient2.map((logo, index) => (
-              <img
-                key={index}
-                className={logo.className}
-                src={logo.src}
-                alt={logo.alt}
-              />
-            ))}
+      </motion.div>
+
+      <h2 className="logo-heading-client">Our Associates</h2>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          transition: { duration: 0.6, delay: 0.2, ease: [0.44, 0, 0.56, 1] },
+        }}
+        viewport={{ amount: "some", once: true }}
+        className="w-full flex flex-col items-center justify-center gap-4 px-[20px] sm:px-[60px]"
+      >
+        <div className="relative w-full overflow-hidden">
+          <div
+            className="flex w-full h-[150px] items-center relative"
+            style={{
+              maskImage:
+                "linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 95%)",
+            }}
+          >
+            <ul className="animate-scroll">
+              {logos1.concat(logos1).map((src, index) => (
+                <li
+                  key={index}
+                  className="flex items-center justify-center w-[121px]"
+                >
+                  <img
+                    src={src}
+                    alt="logo"
+                    className="w-full h-auto object-contain"
+                  />
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-      </div>
-    </Slide>
-  <h2 className="logo-heading-partner">Our Valuable Partners</h2>
-    <Slide {...properties} className="logo-slider">
-      </Slide>
-    <div className='logo-container'>
-    <div className='logo-inner-container'>
-      {logosPartner1.map((logo, index) => (
-        <img
-          key={index}
-          className={logo.className}
-          src={logo.src}
-          alt={logo.alt}
-        />
-      ))}
+      </motion.div>
+      <h2 className="logo-heading-client ">Our Partners</h2>
+
+      <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{
+    opacity: 1,
+    transition: { duration: 0.6, delay: 0.2, ease: [0.44, 0, 0.56, 1] },
+  }}
+  viewport={{ amount: "some", once: true }}
+  className="w-full flex flex-col items-center justify-center gap-4 px-[20px] sm:px-[60px] mt-[10px]"
+>
+  <div className="relative w-full overflow-hidden">
+    <div
+      className="flex w-full h-[150px] items-center justify-center relative"
+      style={{
+        maskImage:
+          "linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 95%)",
+      }}
+    >
+      {/* Center the logos and don't repeat */}
+      <ul className="flex gap-[80px] justify-center">
+        {logos2.map((src, index) => (
+          <li
+            key={index}
+            className="flex items-center justify-center w-[121px]"
+          >
+            <img
+              src={src}
+              alt="logo"
+              className="w-full h-auto object-contain"
+            />
+          </li>
+        ))}
+      </ul>
     </div>
   </div>
-    </>
+</motion.div>
+
+    </div>
   );
 }
 

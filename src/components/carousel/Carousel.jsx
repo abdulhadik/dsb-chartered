@@ -14,7 +14,7 @@ import respImage4 from "../../images/responsive-4.jpg";
 import respImage5 from "../../images/responsive-5.jpg";
 import leftArrow from "../../images/previousButton.png";
 import rightArrow from "../../images/nextButton.png";
-
+import { Link } from 'react-router-dom';
 
 
 const defaultImages = [image1, image2, image3, image4, image5];
@@ -73,7 +73,9 @@ const SlideShow = () => {
               <div>
                 <h1>{titles[index]}</h1>
                 <h3>{descriptions[index]}</h3>
-                <button className="carouselButton">Read More</button>
+                <button className="carouselButton">
+                  <Link to='/audit-and-assurance' style={{ textDecoration: "none", color: "white" }}>READ MORE</Link>
+                </button>
               </div>
             </div>
           </div>

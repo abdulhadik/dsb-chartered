@@ -94,6 +94,8 @@ const WhatWeDo = () => {
           para2={activeTabDetails.tabPara2}
           name={activeTabDetails.tabName}
           phone={activeTabDetails.tabPhone}
+          linksTo={activeTabDetails.ReadMore}
+
         />
       </div>
     </div>

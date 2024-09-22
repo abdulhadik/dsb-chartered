@@ -1,3 +1,7 @@
+body {
+  background: rgb(230,251,255);
+  background: linear-gradient(90deg, rgba(230,251,255,1) 0%, rgba(249,242,254,1) 100%);
+}
 
 .company-profile {
   display: flex;
@@ -8,127 +12,129 @@
   align-items: center;
   width: 80%;
   padding-bottom: 100px;
-  /* background-color: black; */
 }
-.company-profile h3{
+.company-profile h3 {
   margin: 0%;
   font-size: 28px;
   font-family: "Ubuntu", sans-serif;
   margin-bottom: 20px;
-  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 500;
 
   /* Create the gradient. */
- 
-  
-
 }
 
-.company-profile h1{
-margin: 0;
-font-size: 38px;
-font-weight: 700;
-font-family: "Ubuntu", sans-serif;
-margin-bottom: 20px;
-color: #7f8c8d;
-
-
+.company-profile h1 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 20px;
+  color: #7f8c8d;
 }
-.company-profile p{
-margin: 0;
-font-size: 16px;
-font-family: "Ubuntu", sans-serif;
-margin-bottom: 0px;
-line-height: 1.6;
-color: #535353
-;
-
-
+.company-profile p {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 0px;
+  line-height: 1.6;
+  color: #535353;
 }
 .call {
-  
   height: 500px;
-  background-image: url('../../images/dubai-city-landscape.jpg');
+  background-image: url("../../images/dubai-city-landscape.jpg");
   background-size: cover;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: flex-end; /* Align to the bottom */
-  margin-bottom: 0;
+  margin-top: 50px;
 }
 
 .call h1 {
   margin: 0;
-} 
+}
 
 .inside-call {
   width: 75%;
   height: 250px;
   background-color: hsla(0, 0%, 6%, 0.9);
   display: flex;
-  flex-direction:row; /* Optional: If you want to use Flexbox inside this div too */
+  flex-direction: row; /* Optional: If you want to use Flexbox inside this div too */
   align-items: center;
-  border-top-left-radius:20px;
-  border-top-right-radius:20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   padding: 40px;
   justify-content: space-between;
-  
 }
-.left-call{
-  
+.left-call {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: flex-start;
-  
 }
-.left-call h1{
+.left-call h1 {
   font-size: 45px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   line-height: 1.2;
-    font-family: "Ubuntu", sans-serif;
-    color: #7f8c8d;
-    margin: 0%;
-    display: inline-block; /* To ensure box-shadow works properly */
-    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-family: "Ubuntu", sans-serif;
+  color: #7f8c8d;
+  margin: 0%;
+  display: inline-block; /* To ensure box-shadow works properly */
+  /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.left-call p{
+
+.left-call p {
   font-size: 20px;
   font-weight: 300;
-  font-family:"Ubuntu", sans-serif;
-  color:white;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
   margin-top: 0%;
 }
 .inside-call button {
   width: 150px;
   height: 50px;
-margin:0;
-padding: 15px 15px !important;
-text-align: center;
-text-transform: uppercase;
-transition: 0.5s;
-background-size: 200% auto;
-border-radius: 10px;
-border: 1px solid #5643CC;
-/* border: 1px solid #FF512F; */
-display: block;
-border: 0px;
-background-color:white;
-font-weight: 600;
-/* box-shadow: 0px 0px 14px -7px #f09819; */
-box-shadow: 0px 0px 14px -7px #673FD7;
-/* background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%); */
-background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-cursor: pointer;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-color: white;
-
+  margin: 0;
+  padding: 15px 15px !important;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 10px;
+  border: 1px solid #5643cc;
+  /* border: 1px solid #FF512F; */
+  display: block;
+  border: 0px;
+  background-color: white;
+  font-weight: 600;
+  /* box-shadow: 0px 0px 14px -7px #f09819; */
+  box-shadow: 0px 0px 14px -7px #673fd7;
+  /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%); */
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: white;
 }
 
 .inside-call button:hover {
@@ -139,136 +145,188 @@ color: white;
 }
 
 .inside-call button:active {
-transform: scale(0.95);
+  transform: scale(0.95);
 }
 /* Existing styles... */
 
-@media (max-width:1024px){
-  .company-profile h3{
+@media (max-width: 1024px) {
+  .company-profile h3 {
     font-size: 26px;
   }
-  .company-profile h1{
+  .company-profile h1 {
     font-size: 34px;
   }
-  .company-profile p{
+  .company-profile p {
     font-size: 15px;
   }
-  .inside-call{
+  .inside-call {
     gap: 30px;
   }
-
 }
-@media (max-width:1000px){
- 
-  .inside-call{
+@media (max-width: 1000px) {
+  .inside-call {
     flex-direction: column;
     height: 250px;
     gap: 10px;
   }
-  .inside-call p{
+  .inside-call p {
     margin-bottom: 0;
   }
-
 }
-@media (max-width:800px){
-  .company-profile h3{
+@media (max-width: 800px) {
+  .company-profile h3 {
     font-size: 24px;
   }
-  .company-profile h1{
+  .company-profile h1 {
     font-size: 32px;
   }
-  .company-profile p{
+  .company-profile p {
     font-size: 16px;
   }
-  .inside-call{
+  .inside-call {
     align-items: start;
   }
-  .inside-call button{
+  .inside-call button {
     font-size: 12px !important;
     width: 120px !important;
     padding: 8px 8px !important;
   }
-  .inside-call{
+  .inside-call {
     flex-direction: column;
     height: 250px;
     gap: 10px;
   }
- 
 }
-@media (max-width:600px){
-  .inside-call{
-    height:auto;
-    
+@media (max-width: 600px) {
+  .inside-call {
+    height: auto;
   }
-
-
 }
-@media (max-width:500px){
-
-  .call{
-    margin:0px;
-    margin-top: 0px;
+@media (max-width: 500px) {
+  .call {
+    margin: 0px;
+    margin-top: 50px;
     margin-bottom: 0px;
-
   }
-  .inside-call{
+  .inside-call {
     width: 88%;
-    gap:0px;
+    gap: 0px;
     padding-right: 20px;
   }
-  .left-call h1{
+  .left-call h1 {
     font-size: 26px;
     font-family: "Exo 2", sans-serif;
-    font-weight:600;
-    margin-bottom:8px;
+    font-weight: 600;
+    margin-bottom: 8px;
   }
-  .inside-call button{
+  .inside-call button {
     font-size: 12px !important;
     width: auto !important;
     padding: 8px 12px !important;
-    height: auto  ;
+    height: auto;
   }
-  .left-call p{
-    font-size:16px;
+  .left-call p {
+    font-size: 16px;
     margin-top: 8px;
     margin-bottom: 8px;
   }
-  .company-profile{
-    padding:50px 20px 50px;
+  .company-profile {
+    padding: 50px 20px 50px;
     align-items: center;
-    justify-content:center;
-    text-align:center;
-    width:auto;
+    justify-content: center;
+    text-align: center;
+    width: auto;
   }
-  .company-profile h3{
+  .company-profile h3 {
     font-size: 16px;
-    
   }
-  .company-profile h1{
+  .company-profile h1 {
     font-size: 24px;
-    
   }
-  .company-profile p{
+  .company-profile p {
     font-size: 12px;
-  }   
-  .inside-call p{
+  }
+  .inside-call p {
     font-size: 14px;
   }
-  
 }
-@media (max-width:1024px){
-  .left-call>h1{
+@media (max-width: 1024px) {
+  .left-call > h1 {
     font-size: 41px;
   }
-  .left-call button{
+  .left-call button {
     width: 130px;
-    margin:0;
-    padding: 10px 10px ;
+    margin: 0;
+    padding: 10px 10px;
     font-size: 16px;
   }
 }
-@media (max-width:800px){
-  .left-call>h1{
+@media (max-width: 800px) {
+  .left-call > h1 {
     font-size: 30px;
   }
+}
+.team-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.team-text h2 {
+  font-size: 38px;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+  display: inline-block;
+  /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-left: 8px solid #455db5ce;
+  padding-left:10px;
+}
+
+
+.team-text p{
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  color: #535353;
+ 
+  line-height: 1.6;
+  margin-top: 8px;
+ margin-top:10px;
+  
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+  
+  .team-text h2{
+      font-size: 32px;
+  }
+  .team-text p{
+      font-size: 16px;
+  }
+ 
+}
+@media (max-width:500px) {
+ .team-container{
+  padding:0px 20px 0px;
+} 
+  .team-text h2{
+      font-size: 26px;
+      border-left: 4px solid #455db5ce;
+  padding-left:10px;
+  }
+  .team-text p{
+      font-size: 14px;
+      
+  }
+ 
+  
 }

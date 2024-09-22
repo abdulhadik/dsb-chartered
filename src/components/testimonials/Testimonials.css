@@ -51,12 +51,19 @@
     border-radius: 10px;
     box-shadow:none;
     box-shadow: inset rgb(168, 168, 168) 0px 0px 20px -16px; 
+    background-color: white;
   }
   .card{
     --mdb-card-box-shadow:none;
     padding-inline:50px;
+    background-color: #f6f9fc;
   }
-
+  .carousel-control-prev-icon::after{
+    display: none;
+  }
+  .carousel-control-next-icon::after{
+    display:none;
+  }
   
   .testimonial-container .slideNum {
     font-family: "Ubuntu", sans-serif;

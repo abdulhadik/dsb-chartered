@@ -19,9 +19,7 @@ const Footer = () => {
           </p>
           <p>+971 054 467 7219</p>
           <p>info@dsbchartered.com</p>
-          <p>
-            <span style={{fontWeight:'800'}}>Branches: </span>Dubai | Sharjah |<br className='hide-on'></br> Abu Dhabhi
-          </p>
+          
         </div>
         <div className="details-services">
           <h3>Services</h3>
@@ -52,7 +50,7 @@ const Footer = () => {
       </div>
      
       <div className="terms-container">
-        <p>Copyright © 2024 Emirates Chartered Accountants Group</p>
+        <p>Copyright © 2024 DSB Chartered Accountants Group</p>
         <div className="terms-logos">
           <img className='visaCard-img' src={VisaCard} alt='visa card'/>
           <img className='masterCard-img' src={MasterCard} alt='master card'/>

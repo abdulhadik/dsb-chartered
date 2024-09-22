@@ -1,0 +1,64 @@
+.container-servicesHero {
+  height: 85vh;
+  width: auto;
+  display: flex;
+  padding-inline: 50px;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+}
+.left-container {
+  width: 500px;
+}
+.left-heading {
+  color: #0a2540;
+  font-weight: 800px;
+  font-size: 56px;
+}
+.left-sentence {
+  font-size: 18px;
+}
+.right-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: 230px;
+}
+
+.right-container div {
+  position: absolute;
+}
+.img-1 {
+  width: 200px;
+  height: 230px;
+  border-radius: 120px 0px 100px 100px;
+  right: -50px;
+  top: -150px;
+  z-index: 2;
+  background-image: url("../../images/servicesImage/2.png");
+  /* box-shadow: -2px 2px 2px rgb(121, 121, 121); */
+}
+.img-2 {
+  background-image: url("../../images/servicesImage/panoramic-view-dubai-city-illuminated-neon-spectrum.jpg");
+  background-size: 100%;
+  width: 280px;
+  height: 400px;
+  border-radius: 120px 120px 100px 0px;
+  z-index: 1;
+  box-shadow: 2px 2px 2px rgb(121, 121, 121);
+}
+.img-3 {
+  background-image: url("../../images/servicesImage/1.png");
+  width: 200px;
+  height: 230px;
+  border-radius: 100px 100px 0px 120px;
+  left: 240px;
+  top: -40px;
+  background-size: cover;
+  z-index: 3;
+  /* box-shadow: 2px 2px 2px rgb(121, 121, 121); */
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}

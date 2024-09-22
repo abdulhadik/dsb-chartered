@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* In your index.css or a specific CSS file */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Adjust this based on your layout */
+  }
+  
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+    white-space: nowrap; /* Prevents wrapping */
+    display: flex;
+    gap: 80px; /* Ensure the list does not wrap */
+  }
+  
+  .logo-main-container {
+    height: auto; /* Allow dynamic height adjustment */
+  }
+  
+  .logo-heading-client {
+    margin-bottom: 1rem; /* Add spacing between heading and logos */
+  }
+  
+  .logo-heading-client{
+    font-size: 38px;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0%;
+    display: inline-block;
+    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* border-left: 8px solid #455db5ce; */
+  
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+   
+  .logo-heading-client{
+        font-size: 32px;
+    }
+   
+   
+}
+@media (max-width:500px) {
+  
+  .logo-heading-client{
+        font-size: 26px;
+        
+    padding-left:10px;
+    }
+   
+    
+}

@@ -1,181 +1,56 @@
-/* Container for the logos slider */
-.logo-container {
-    display: flex;
-    justify-content: center;
-    padding-inline: 50px; 
-    margin-bottom: 30px;
-  }
-  
-  /* Inner container for the logos */
-  .logo-inner-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    align-items: center;
-    
-    flex-wrap: wrap;
-  }
-  
-  /* Apply height auto only for the logo slider */
-  .logo-slider .each-slide-effects > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    height: auto;
-  }
-  
-  /* Logo Images Heights */
-  .logo-images-birla { height: 60px; }
-  .logo-images-discovery { height: 40px; }
-  .logo-images-hitachi { height: 30px; }
-  .logo-images-hudco { height: 70px; }
-  .logo-images-icsi { height: 60px; }
-  .logo-images-kei { height: 52px; }
-  .logo-images-meridien { height: 52px; }
-  .logo-images-indianOil { height: 70px; }
-  .logo-images-gail { height: 70px; }
-  .logo-images-ndts { height:45px; }
-  .logo-images-lex { height: 45px; }
-  .logo-images-powergrade { height: 50px; }
-  .logo-images-ircon { height: 45px; }
-  .logo-images-webEcreater { height: 50px; }
-  .logo-images-birlaSugar { height: 40px; }
-  .logo-images-pfc { height: 70px; }
-  
-  .buttonlogoStyleLeft {
-    display: none;
-  }
-  
-  .buttonlogoStyleRight {
-    display: none;
-  }
-  .logo-heading-client{
-    text-align: center;
-    font-size: 38px;
-    font-family: "Ubuntu", sans-serif;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    display: inline-block; 
-    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-left: 8px solid #455db5ce;
-    padding-left:10px;
-    text-align: center;
-    
-    
-  }
-  .logo-heading-partner{
-  
-    text-align: center;
-    font-size: 38px;
-    font-family: "Ubuntu", sans-serif;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    display: inline-block; 
-    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-left: 8px solid #455db5ce;
-    padding-left:10px;
-  }
-  .logo-images-lex{
-    height: 60px;
-  }
-  .logo-images-indianAccounting{
-    height: 80px;
-  }
-  .logo-images-ndts{
-    height: 60px;
-  }
-  @media (max-width: 800px) {
-    .logo-heading-partner {
-        font-size: 32px;
-        margin-bottom: 20px !important;
-        margin-left: 50px; /* Adjusted margin-left */
-        border-left: 4px solid #455db5ce;
-    }
-    .logo-heading-client {
-        font-size: 32px;
-        margin-bottom: 20px !important;
-        margin-left: 50px; /* Adjusted margin-left */
-        border-left: 4px solid #455db5ce;
-    }
-   
-    .logo-inner-container {
-        gap: 20px; /* Removed extra semicolon */
-        padding-top: 0px;
-    }
-    .logo-container {
-        padding-inline: 50px; /* Adjusted */
-    }
-    .logo-images-birla { height: 50px; }
-    .logo-images-discovery { height: 30px; }
-    .logo-images-hitachi { height: 20px; }
-    .logo-images-hudco { height: 60px; }
-    .logo-images-icsi { height: 50px; }
-    .logo-images-kei { height: 42px; }
-    .logo-images-meridien { height: 42px; }
-    .logo-images-indianOil { height: 60px; }
-    .logo-images-gail { height: 60px; }
-    .logo-images-ndts { height: 40px; }
-    .logo-images-lex { height: 40px; }
-    .logo-images-powergrade { height: 40px; }
-    .logo-images-ircon { height: 35px; }
-    .logo-images-webEcreater { height: 40px; }
-    .logo-images-birlaSugar { height: 30px; }
-    .logo-images-pfc { height: 60px; }
-    .logo-images-lex{height: 50px;}
-    .logo-images-indianAccounting{height: 70px;}
-    .logo-images-ndts{height: 50px;}
+.logo-main-container {
+  margin-top: 50px;
+}
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding-inline: 50px; 
+  margin-bottom: 30px;
+}
+
+.logo-inner-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-heading-client {
+  text-align: center;
+  font-size: 38px;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  display: inline-block;
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-left: 8px solid #455db5ce;
+  padding-left: 10px;
+}
+
+@media (max-width: 800px) {
+  .logo-heading-client {
+    font-size: 32px;
+    margin-left: 50px;
+    border-left: 4px solid #455db5ce;
+  }
+
+  .logo-inner-container {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 500px) {
-    .logo-heading-partner {
-        font-size: 26px;
-        margin-left: 20px;
-        margin-bottom: 20px;
-       
-    }
-    .logo-heading-client {
-        font-size: 26px;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        
-    }
+  .logo-heading-client {
+    font-size: 26px;
+    margin-left: 20px;
+    border-left: 4px solid #455db5ce;
+  }
 
-    /* Other adjustments */
-    .logo-container {
-        padding-inline: 20px;
-    }
-   
-    .logo-inner-container {
-        gap: 18px; /* Removed extra semicolon */
-        padding-top: 0px;
-    }
-    .logo-images-birla { height: 40px; }
-    .logo-images-discovery { height: 20px; }
-    .logo-images-hitachi { height: 15px; }
-    .logo-images-hudco { height: 45px; }
-    .logo-images-icsi { height: 40px; }
-    .logo-images-kei { height: 32px; }
-    .logo-images-meridien { height: 32px; }
-    .logo-images-indianOil { height: 50px; }
-    .logo-images-gail { height: 50px; }
-    .logo-images-ndts { height: 30px; }
-    .logo-images-lex { height: 30px; }
-    .logo-images-powergrade { height: 30px; }
-    .logo-images-ircon { height: 25px; }
-    .logo-images-webEcreater { height: 30px; }
-    .logo-images-birlaSugar { height: 20px; }
-    .logo-images-pfc { height: 40px; }
-    .logo-images-lex{height: 40px;}
-    .logo-images-indianAccounting{height: 60px;}
-    .logo-images-ndts{height: 40px;}
-
+  .logo-inner-container {
+    gap: 18px;
+  }
 }

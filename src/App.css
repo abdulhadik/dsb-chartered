@@ -1,7 +1,10 @@
+
 .body {
   margin: 0;
   padding: 0;
-
+  background: rgb(230,251,255);
+  background: linear-gradient(90deg, rgba(230,251,255,1) 0%, rgba(249,242,254,1) %);
   font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
 }
+

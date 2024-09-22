@@ -27,6 +27,9 @@
     font-size: 20px;
     margin-bottom: 5px;
 }
+.card{
+    --bs-card-border-color:none !important;
+}
 .card-container p{
     font-family: "Ubuntu", sans-serif;
     font-size: 15px;
@@ -48,6 +51,7 @@
     padding-left:10px;
     font-family: "Ubuntu", sans-serif;
 }
+
 .customCard-text h2{font-size: 38px;
     
     font-family: "Ubuntu", sans-serif;

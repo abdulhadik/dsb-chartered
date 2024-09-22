@@ -1,0 +1,55 @@
+.auditList-container{
+    display: flex;
+    margin: 50px;
+    /* align-items: center; */
+    /* border:1px solid blue; */
+    margin-top: 100px;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    font-family: "Ubuntu", sans-serif;
+    background: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    color: white;
+    margin-bottom: 0px;
+    border: 1px solid #dee2e6;
+    border-bottom: 0px;
+
+}
+.left-Audit{
+    padding-right: 50px;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 30px;
+    
+}
+.right-Audit{
+    display: flex;
+    gap: 20px;
+    /* padding-left: 50px; */
+    padding-top: 30px;
+    padding-bottom:30px;
+    align-items: center;
+    padding-right: 50px;
+}
+.right-Audit p{
+    margin: 0;
+    margin-bottom: 3px;
+
+}
+.image-div{
+    width: 130px;
+    height: 130px;
+     background-color:red;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-image:url('../../images/consultantimage.png');
+    background-size:cover;
+}
+.left-Audit h2{
+    font-size: 38px;
+}
+
+.p-name{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight:500;
+}

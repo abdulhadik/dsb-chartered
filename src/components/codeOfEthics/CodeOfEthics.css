@@ -1,0 +1,67 @@
+.codeOfEthics-container {
+    padding: 50px;
+    padding-top:50px;
+    padding-bottom:50px;
+    
+}
+
+.codeOfEthics-text h2 {
+    font-size: 38px;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0%;
+    display: inline-block;
+    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-left: 8px solid #455db5ce;
+    padding-left:10px;
+}
+
+
+.codeOfEthics-p{
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    color: #535353;
+   
+    line-height: 1.6;
+    margin-top: 8px;
+   margin-top:10px;
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    .codeOfEthics-container{
+        padding-top:50px;}
+    .codeOfEthics-text h2{
+        font-size: 32px;
+    }
+    .codeOfEthics-p{
+        font-size: 16px;
+    }
+   
+}
+@media (max-width:500px) {
+   .codeOfEthics-container{
+    padding:50px 20px 50px;
+} 
+    .codeOfEthics-text h2{
+        font-size: 26px;
+        border-left: 4px solid #455db5ce;
+    padding-left:10px;
+    }
+    .codeOfEthics-p{
+        font-size: 14px;
+        
+    }
+   
+    
+}
