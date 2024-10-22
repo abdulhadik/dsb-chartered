@@ -11,31 +11,7 @@ export default function InternationalTaxation (props) {
           <h4>Taxation</h4>
           <h1>International Taxation</h1>
         </div>
-
-        <div className="Audit-links">
-          <h5>Taxation</h5>
-          <ul>
-            <Link to="/audit-and-assurance">
-              <li>Vat Consultancy</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/statutory-audit">
-              <li>International Taxation</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/internal-audit">
-              <li>Excise Duty</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/liquidation-report">
-              <li>Customs</li>
-            </Link>
-          </ul>
         </div>
-      </div>
       <div className="whoweare-container">
         <div className="whoweare-text">
           <h2>International Taxation Consultants</h2>
@@ -121,7 +97,8 @@ export default function InternationalTaxation (props) {
             <h1>Partner with the Top !</h1>
             <p>International Taxation Specialists in Dubai, UAE.</p>
           </div>
-          <button>GET A QUOTE</button>
+          <Link  to={"/contact"}
+                    style={{ textDecoration: "none" }}><button>Contact Us</button></Link>
         </div>
       </div>
     </div>

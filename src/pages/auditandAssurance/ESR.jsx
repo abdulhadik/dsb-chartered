@@ -12,29 +12,7 @@ export default function ESR(props) {
           <h1>The Economic Substance Regulations (ESR)</h1>
         </div>
 
-        <div className="Audit-links">
-          <h5>Statuatory Compliances</h5>
-          <ul>
-            <Link to="/esr">
-              <li>ESR</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/aml">
-              <li>AML</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/ubo">
-              <li>UBO</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/fatca">
-              <li>FATCA, CRS</li>
-            </Link>
-          </ul>
-        </div>
+        
       </div>
       <div className="whoweare-container">
         <div className="whoweare-text">
@@ -126,7 +104,8 @@ export default function ESR(props) {
             <h1>Partner with the Top !</h1>
             <p>ESR Specialists in Dubai, UAE.</p>
           </div>
-          <button>GET A QUOTE</button>
+          <Link  to={"/contact"}
+                    style={{ textDecoration: "none" }}><button>Contact Us</button></Link>
         </div>
       </div>
     </div>

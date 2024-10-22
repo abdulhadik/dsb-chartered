@@ -31,28 +31,19 @@ export default function NavbarStyle() {
   const [eventsDropdownVisible, setEventsDropdownVisible] = useState(false);
 
   const services = [
-    "Audit & Assurance",
     "Accounting & Financial Reporting",
     "Taxation",
     "Statutory Compliances",
     "CFO Services",
     "Business Valuation",
-    "Business Services",
   ];
 
   const rightContent = [
     [
-      { name: "Due Diligence Audit", link: "/audit-and-assurance" },
-      { name: "Statutory Audit", link: "/statutory-audit" },
-      { name: "Internal Audit", link: "/internal-audit" },
-      { name: "Liquidation Report", link: "/liquidation-report" },
-      { name: "In Country Valuation", link: "/in-country-valuation" },
-    ],
-    [
       { name: "Accounting & Bookkeeping", link: "/accounting-and-bookkeeping" },
       { name: "IFRS Compliant", link: "/ifrs-compliance" },
-      { name: "IFRS for SMEs Compliant", link: "/business-consultancy" },
-      { name: "IND-AS Compliant", link: "/mergers-acquisition" },
+      { name: "IFRS for SMEs ", link: "/ifrs-for-sme" },
+     
       
     ],
     [
@@ -60,7 +51,7 @@ export default function NavbarStyle() {
       { name: "VAT Consultancy", link: "/vat-consultant" },
       { name: "International Taxation", link: "/international-taxation" },
       { name: "Excise Duty", link: "/excise-duty" },
-      { name: "Customs", link: "/excise-tax" },
+      { name: "Customs", link: "/customs" },
       
     ],
     [
@@ -71,7 +62,7 @@ export default function NavbarStyle() {
 
     ],
     [
-      { name: "CFO Services", link: "/cfo-services" },
+      { name: "CFO Services", link: "/cfo" },
       
     ],
     [
@@ -79,11 +70,7 @@ export default function NavbarStyle() {
       
     ],
   
-    [
-      { name: "Business Set up", link: "/business-set-up" },
-      { name: "PRO & Visa Services", link: "/pro-visa-services" },
-      
-    ],
+    
   ];
   
   return (
@@ -181,30 +168,21 @@ export default function NavbarStyle() {
               </CDropdown>
               </CNavItem>
               <CNavItem>
-              <CDropdown variant="nav-item" popper={false}
-                onMouseEnter={() => setEventsDropdownVisible(true)}
-                onMouseLeave={() => setEventsDropdownVisible(false)}
-                visible={eventsDropdownVisible}>
-                <CDropdownToggle>Events & Webinars</CDropdownToggle>
-                <CDropdownMenu>
-                <div className="navbar-dropdown aboutUs-dropdown">
-                <div className="navbar-dropdown-left aboutUs-dropdown-left">
-                <ul className="navbar-dropdown-left-list aboutUs-dropdown-left-list">
-                <li>Upcoming Webinars / Events</li>
-                <li>Completed Webinars / Events</li>
-                
-                </ul>
-                </div>
-                </div>
-                </CDropdownMenu>
-              </CDropdown>
+                <CNavLink>
+                  <Link
+                    to={"/events-and-webinar"}
+                    style={{ textDecoration: "none", color: "#535353" }}
+                  >
+                    Events & Webinars
+                  </Link>
+                </CNavLink>
               </CNavItem>
               
               
               <CNavItem>
                 <CNavLink>
                   <Link
-                    to={"/audit-and-assurance"}
+                    to={"/newsletter"}
                     style={{ textDecoration: "none", color: "#535353" }}
                   >
                     News Letters

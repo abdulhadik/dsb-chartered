@@ -11,30 +11,6 @@ export default function AML(props) {
           <h4>Statuatory Compliances</h4>
           <h1>Anti Money Laundering (AML) in UAE</h1>
         </div>
-
-        <div className="Audit-links">
-          <h5>Statuatory Compliances</h5>
-          <ul>
-            <Link to="/esr">
-              <li>ESR</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/aml">
-              <li>AML</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/ubo">
-              <li>UBO</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/fatca">
-              <li>FATCA, CRS</li>
-            </Link>
-          </ul>
-        </div>
       </div>
       <div className="whoweare-container">
         <div className="whoweare-text">

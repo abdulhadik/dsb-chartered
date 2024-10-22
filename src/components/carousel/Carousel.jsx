@@ -73,9 +73,7 @@ const SlideShow = () => {
               <div>
                 <h1>{titles[index]}</h1>
                 <h3>{descriptions[index]}</h3>
-                <button className="carouselButton">
-                  <Link to='/audit-and-assurance' style={{ textDecoration: "none", color: "white" }}>READ MORE</Link>
-                </button>
+                
               </div>
             </div>
           </div>

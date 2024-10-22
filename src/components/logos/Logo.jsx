@@ -1,57 +1,40 @@
 import React from "react";
 import "../../index.css";
 import { motion } from "framer-motion";
-import bms from "../../images/logoImage/bms.png";
-import Bookkeeper from "../../images/logoImage/Bookkeeper.png";
-import Dashmesh from "../../images/logoImage/Dashmesh.png";
-import Edu from "../../images/logoImage/Edu.png";
-import ElectroRak from "../../images/logoImage/ElectroRak.png";
-import Floors from "../../images/logoImage/Floors.png";
-import INextise from "../../images/logoImage/INextise.png";
-import Itrom from "../../images/logoImage/Itrom.png";
-import kashka from "../../images/logoImage/kashka.png";
-import logo from "../../images/logoImage/logo.png";
-import NewEast from "../../images/logoImage/NewEast.png";
-import Picture1 from "../../images/logoImage/Picture1.png";
-import pnb from "../../images/logoImage/pnb.png";
-import Restyle from "../../images/logoImage/Restyle.png";
-import Sai from "../../images/logoImage/Sai.png";
-import SevenHill from "../../images/logoImage/SevenHill.png";
-import winchem from "../../images/logoImage/winchem.png";
-import TheArt from "../../images/logoImage/TheArt.png";
-import vivo from "../../images/logoImage/vivo.png";
-import smj from "../../images/logoImage/smj.png";
-import alyah from "../../images/logoImage/alyah.png";
-import stuart from "../../images/logoImage/stuart.png";
-import vsp from "../../images/logoImage/vsp.png";
-import krestone from "../../images/logoImage/krestone.png";
-import meydan from "../../images/logoImage/meydan.png";
-import rakez from "../../images/logoImage/rakez.png";
+import img1 from "../../images/logoImage/1.png";
+import img2 from "../../images/logoImage/2.png";
+import img3 from "../../images/logoImage/3.png";
+import img4 from "../../images/logoImage/4.png";
+import img5 from "../../images/logoImage/5.png";
+import img6 from "../../images/logoImage/6.png";
+import img7 from "../../images/logoImage/7.png";
+import img8 from "../../images/logoImage/8.png";
+import img9 from "../../images/logoImage/9.png";
+import img10 from "../../images/logoImage/10.png";
+import img11 from "../../images/logoImage/11.png";
+import img12 from "../../images/logoImage/12.png";
+import img13 from "../../images/logoImage/13.png";
+import img14 from "../../images/logoImage/14.png";
+import img15 from "../../images/logoImage/15.png";
+import img16 from "../../images/logoImage/16.png";
+import img17 from "../../images/logoImage/17.png";
+import img18 from "../../images/logoImage/18.png";
+import img19 from "../../images/logoImage/19.png";
+import img20 from "../../images/logoImage/20.png";
+import img21 from "../../images/logoImage/21.png";
+import img22 from "../../images/logoImage/22.png";
+import img23 from "../../images/logoImage/23.png";
+import img24 from "../../images/logoImage/24.png";
+import img25 from "../../images/logoImage/25.png";
+
+
 
 function Logo() {
   const logos = [
-    bms,
-    Bookkeeper,
-    Dashmesh,
-    Edu,
-    ElectroRak,
-    Floors,
-    INextise,
-    Itrom,
-    kashka,
-    logo,
-    NewEast,
-    Picture1,
-    pnb,
-    Restyle,
-    Sai,
-    SevenHill,
-    winchem,
-    TheArt,
-    vivo,
+    img1,img4,img5,img6,img7,img8,img9,img10,img11,img13,img14,img16,img17,img18,img21,img22,img24,img25
   ];
-  const logos1 = [smj, alyah, stuart, vsp, krestone];
-  const logos2 = [meydan,rakez];
+  const logos1 = [img19, img3, img20, img23, img2];
+  const logos2 = [img15,img12];
 
   return (
     <div className="logo-main-container text-center mt-[50px] mb-[50px]">
@@ -83,7 +66,7 @@ function Logo() {
                   <img
                     src={src}
                     alt="logo"
-                    className="w-full h-auto object-contain"
+                    className="w-auto h-[70px]"
                   />
                 </li>
               ))}
@@ -120,7 +103,7 @@ function Logo() {
                   <img
                     src={src}
                     alt="logo"
-                    className="w-full h-auto object-contain"
+                    className="w-auto h-[70px]"
                   />
                 </li>
               ))}
@@ -157,7 +140,7 @@ function Logo() {
             <img
               src={src}
               alt="logo"
-              className="w-full h-auto object-contain"
+              className="w-auto h-[70px] "
             />
           </li>
         ))}

@@ -12,29 +12,7 @@ export default function AccountingAndBookkeeping(props) {
           <h4>Accounting & Financial Reporting</h4>
           <h1>Accounting & Bookkeeping</h1>
         </div>
-        <div className="Audit-links">
-          <h5>Accounting & Financial Reporting</h5>
-          <ul>
-            <Link to="/audit-and-assurance">
-              <li>Accounting & Bookkeeping</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/statutory-audit">
-              <li>IFRS Compliant</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/internal-audit">
-              <li>IFRS for SMEs Compliant</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/liquidation-report">
-              <li>IND-AS Compliant</li>
-            </Link>
-          </ul>
-        </div>
+        
       </div>
       <div className="whoweare-container">
         <div className="whoweare-text">
@@ -183,7 +161,8 @@ export default function AccountingAndBookkeeping(props) {
             <h1>Partner with the Top !</h1>
             <p>Accounting & Bookkeeping Specialists in Dubai, UAE.</p>
           </div>
-          <button>GET A QUOTE</button>
+          <Link  to={"/contact"}
+                    style={{ textDecoration: "none" }}><button>Contact Us</button></Link>
         </div>
       </div>
     </div>

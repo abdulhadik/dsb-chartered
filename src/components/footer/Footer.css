@@ -43,7 +43,7 @@
        .terms-container{
         background-color:rgb(0, 0, 0);
         display:flex;
-        justify-content: space-between;
+        justify-content:center;
         align-items: center;
         padding-inline: 40px;
         font-size: 12;
@@ -51,6 +51,7 @@
         padding-bottom: 20px;
         font-size: 14px;
         color: #838181;
+        text-align: center;
         
        }
        .privacy-links ul{
@@ -170,16 +171,23 @@ gap:3px;
       }
       .terms-container{
         display:flex;
-        flex-direction: column;
+        
         align-items:center;
-        justify-content: center;
+        justify-content:center;
       }
-      .terms-container p{
-        text-align: center;
-        align-items: center;
-      }
+      
+      
       .privacy-links ul{
         margin-top: 16px;
       }
       
     }
+
+    .footer-social{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background:rgb(0, 0, 0);
+    }
+   

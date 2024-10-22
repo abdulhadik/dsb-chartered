@@ -83,7 +83,7 @@ a {
   padding: 0px;
   /* padding-right: 10px; */
   border-right: 1.5px solid #673FD7;
-  width:270px;
+  width:310px;
 }
 .aboutUs-dropdown-left-list{
   width:auto;
@@ -96,6 +96,7 @@ a {
   padding-left:10px;
   /* padding-right: 100px; */
   list-style-type:none;
+ 
   /* width: 316px; */
   padding-right: 10px;
   white-space: nowrap;
@@ -114,6 +115,7 @@ a {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left:10px;
+ 
   /* padding-right: 100px; */
   list-style-type:none;
   /* width: 316px; */

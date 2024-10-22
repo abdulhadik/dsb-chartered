@@ -12,15 +12,7 @@ export default function InternalAudit(props) {
         <h4>Audit And Assurance</h4>
           <h1>Internal Audit</h1>
         </div>
-        <div className="Audit-links">
-        <h5>Audit And Assurance</h5>
-        <ul><Link to='/audit-and-assurance'><li>Due Diligence Audit</li></Link></ul>
-        <ul><Link to='/statutory-audit'><li>Statuatory Audit</li></Link></ul>
-        <ul><Link to='/internal-audit'><li>Internal Audit</li></Link></ul>
-        <ul><Link to='/liquidation-report'><li>Liquidationion Report</li></Link></ul>
-        <ul><Link to='/in-country-valuation'><li>In Country Audit</li></Link></ul>
-
-        </div>
+       
       </div>
       <div className="whoweare-container">
         <div className="whoweare-text">
@@ -91,7 +83,8 @@ export default function InternalAudit(props) {
             <h1>Partner with the Top !</h1>
             <p>Internal Audit Specialists in Dubai, UAE.</p>
           </div>
-          <button>GET A QUOTE</button>
+          <Link  to={"/contact"}
+                    style={{ textDecoration: "none" }}><button>Contact Us</button></Link>
         </div>
       </div>
     </div>

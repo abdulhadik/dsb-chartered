@@ -1,17 +1,33 @@
 import React from "react";
 import "./Footer.css";
-import VisaCard from '../../images/VisaCard.png'
-import MasterCard from '../../images/MasterCard.png'
-import dubaiFreezone from '../../images/dubaiFreezone.png'
-import expo from '../../images/expo.png'
-import jafza from '../../images/jafza.png'
-import rakez from '../../images/rakez.png'
-import silicon from '../../images/silicon.png'
-const Footer = () => {
+import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+export default function Footer(){
   return (
     <div className="footer-container">
     
       <div className="details-container">
+        
+        <div className="details-services">
+          <h3>Links</h3>
+          <p>Home</p>
+          <p>Upcoming Webinars & Events</p>
+          <p>Completed Webinars & Events</p>
+          <p>Newsletters</p>
+          <p>Contact Us</p>
+          
+        </div>
+        <div className="details-company">
+          <h3>Services</h3>
+          <p>Accounting & finacial Reporting</p>
+          <p>Taxation</p>
+          <p>Statuatory Compliances</p>
+          <p>CFO Services</p>
+          <p>Business Valuation </p>
+          <p>Business Services</p>
+        </div>
+        <div className="details-help">
         <div className="details-office">
           <h3>Corporate office</h3>
           <p>
@@ -21,50 +37,31 @@ const Footer = () => {
           <p>info@dsbchartered.com</p>
           
         </div>
-        <div className="details-services">
-          <h3>Services</h3>
-          <p>Audit Assurance Service</p>
-          <p>Business Advisory Service</p>
-          <p>Accounting and Bookkeeping</p>
-          <p>Taxation</p>
-          <p>Company Set Up</p>
-          <p>Trade Finance in UAE</p>
-        </div>
-        <div className="details-company">
-          <h3>Company</h3>
-          <p>About</p>
-          <p>Meet the Team</p>
-          <p>Blog</p>
-          <p>Events</p>
-          <p>Audit Division</p>
-          <p>Training Internships</p>
-        </div>
-        <div className="details-help">
-          <h3>Help</h3>
-          <p className='companyProfile'>Company profile</p>
-          <p>Contact Us</p>
-          <p>Learning Center</p>
-          <p>Why Choose Us</p>
-          <button className="button-36">Get Quote</button>
+          <Link to={"/contact"}
+                    style={{ textDecoration: "none" }}><button className="button-36">Contact Us</button></Link>
         </div>
       </div>
-     
+     <div className="footer-social">
+     <a
+                      href="https://www.linkedin.com/company/dsbchartered/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faLinkedin} style={{ color: "#838181", fontSize: "30px" }} />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/dsbcharteredaccountants?igsh=MWgzdTJ1bDRlZGZmaw%3D%3D&utm_source=qr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faInstagram} style={{ color: "#838181", fontSize: "30px" }} />
+                    </a>
+     </div>
       <div className="terms-container">
         <p>Copyright © 2024 DSB Chartered Accountants Group</p>
-        <div className="terms-logos">
-          <img className='visaCard-img' src={VisaCard} alt='visa card'/>
-          <img className='masterCard-img' src={MasterCard} alt='master card'/>
-        </div>
-        <div className="privacy-links">
-          <ul>
-          <li><a href="/">Terms and condition</a></li>
-          <li>|</li>
-          <li><a href="/">Privacy Statement</a></li>
-          </ul>
-        </div>
+        
       </div>
     </div>
   );
 };
 
-export default Footer;

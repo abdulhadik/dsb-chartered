@@ -12,29 +12,7 @@ export default function ExciseTax(props) {
           <h1>Excise Duty</h1>
         </div>
 
-        <div className="Audit-links">
-          <h5>Taxation</h5>
-          <ul>
-            <Link to="/audit-and-assurance">
-              <li>Vat Consultancy</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/international-taxation">
-              <li>International Taxation</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/excise-duty">
-              <li>Excise Duty</li>
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/customs-duty">
-              <li>Customs</li>
-            </Link>
-          </ul>
-        </div>
+        
       </div>
       <div className="whoweare-container">
         <div className="whoweare-text">
@@ -179,7 +157,8 @@ export default function ExciseTax(props) {
             <h1>Partner with the Top !</h1>
             <p>Excise Duty Specialists in Dubai, UAE.</p>
           </div>
-          <button>GET A QUOTE</button>
+          <Link  to={"/contact"}
+                    style={{ textDecoration: "none" }}><button>Contact Us</button></Link>
         </div>
       </div>
     </div>

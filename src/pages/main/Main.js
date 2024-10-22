@@ -5,7 +5,7 @@ import "./Main.css";
 import Expertise from "../../components/expertise/Expertise.jsx";
 import CodeOfEthics from "../../components/codeOfEthics/CodeOfEthics.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { Link } from "react-router-dom";
 import CodeOfEthicsImg from "../../images/codeofethics.jpg";
 import Logo from "../../components/logos/Logo.jsx";
 
@@ -31,7 +31,7 @@ function Main() {
           </p>
         </div>
       </div>
-      {/* <WhatWeDo /> */}
+     
       <CodeOfEthics />
       <Expertise />
       <div className="call">
@@ -42,7 +42,8 @@ function Main() {
             </h1>
             <p>To ensure clients progress financially and Socially</p>
           </div>
-          <button>GET A QUOTE</button>
+          <Link  to={"/contact"}
+                    style={{ textDecoration: "none" }}><button>Contact Us</button></Link>
         </div>
       </div>{" "}
       {/* Closing tag for the div with className="call" */}

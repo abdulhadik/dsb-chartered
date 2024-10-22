@@ -240,7 +240,7 @@ body{
   font-size: 24px;
 }
 .Audit-links ul{
-  list-style: none;
+  
   padding-left: 0;  
   margin-left: 0;
   
@@ -314,6 +314,7 @@ body{
    .audit-text ul li{
      font-size: 14px;
    }
+   
    .AuditHero{
     flex-direction:column;
     justify-content:center;

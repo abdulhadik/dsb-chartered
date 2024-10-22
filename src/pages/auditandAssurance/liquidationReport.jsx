@@ -14,15 +14,7 @@ export default function LiquidationReport(props) {
         <h4>Audit And Assurance</h4>
           <h1>Liquidation Report</h1>
         </div>
-        <div className="Audit-links">
-        <h5>Audit And Assurance</h5>
-        <ul><Link to='/audit-and-assurance'><li>Due Diligence Audit</li></Link></ul>
-        <ul><Link to='/statutory-audit'><li>Statuatory Audit</li></Link></ul>
-        <ul><Link to='/internal-audit'><li>Internal Audit</li></Link></ul>
-        <ul><Link to='/liquidation-report'><li>Liquidationion Report</li></Link></ul>
-        <ul><Link to='/in-country-valuation'><li>In Country Audit</li></Link></ul>
-
-        </div>
+        
       </div>
       <div className="whoweare-container">
         <div className="whoweare-text">
@@ -119,7 +111,8 @@ export default function LiquidationReport(props) {
             <h1>Partner with the Top !</h1>
             <p>Liquidation Report Specialists in Dubai, UAE.</p>
           </div>
-          <button>GET A QUOTE</button>
+          <Link  to={"/contact"}
+                    style={{ textDecoration: "none" }}><button>Contact Us</button></Link>
         </div>
       </div>
     </div>
