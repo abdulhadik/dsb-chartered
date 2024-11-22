@@ -10,7 +10,7 @@ export default function CodeOfEthics () {
       <div className="codeOfEthics-text">
         <h2> Code Of Ethics</h2>
       </div>
-      <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+      <div className="row gy-3 gy-md-4 gy-lg-0 ">
             <div className="col-12 col-lg-6 col-xl-7">
               <div className="row justify-content-xl-between">
                 <div className="col-12 col-xl-11">

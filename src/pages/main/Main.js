@@ -1,6 +1,6 @@
-import React from "react";
-import Carousel from "../../components/carousel/Carousel";
-import WhatWeDo from "../../components/what-we-do/WhatWeDo";
+import React,{ useEffect} from "react";
+
+// import WhatWeDo from "../../components/what-we-do/WhatWeDo";
 import "./Main.css";
 import Expertise from "../../components/expertise/Expertise.jsx";
 import CodeOfEthics from "../../components/codeOfEthics/CodeOfEthics.jsx";
@@ -8,13 +8,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import CodeOfEthicsImg from "../../images/codeofethics.jpg";
 import Logo from "../../components/logos/Logo.jsx";
+import Hero from '../../components/Hero/Hero.jsx';
 
 import WhoWeAre from "../../components/whoWeAre/WhoWeAre.jsx";
 function Main() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="main-container">
       <div className="main-first">
-        <Carousel className="custom-carousel" />
+        {/* <Carousel className="custom-carousel" /> */}
+        <Hero/>
       </div>
       <WhoWeAre />
       <div className="team-container">

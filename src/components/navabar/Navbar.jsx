@@ -1,208 +1,43 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "@coreui/coreui/dist/css/coreui.min.css";
+import Logo from "../../images/logoDSB.png";
 
-import {
-  CNavbar,
-  CContainer,
-  CNavbarBrand,
-  CNavbarToggler,
-  CCollapse,
-  CNavbarNav,
-  CNavItem,
-  CNavLink,
-  CDropdown,
-  CDropdownToggle,
-  CDropdownMenu,
-  CDropdownItem,
-  CDropdownDivider,
-} from "@coreui/react";
-import "./Navbar.css";
-import logoDSB from "../../images/logoDSB.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import MenusData from "./NavData"; // Adjust the path as necessary
 
+
+
+import MobMenu from "./MobMenu.jsx";
+import DesktopMenu from "./DesktopMenu.jsx";
 export default function NavbarStyle() {
-  const [visible, setVisible] = useState(false);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [servicesDropdownVisible, setServicesDropdownVisible] = useState(false);
-  const [aboutUsDropdownVisible, SetAboutUsDropdownVisible] = useState(false);
-  const [learningHubDropdownVisible, setLearningHubDropdownVisible] = useState(false);
-  const [eventsDropdownVisible, setEventsDropdownVisible] = useState(false);
-
-  const services = [
-    "Accounting & Financial Reporting",
-    "Taxation",
-    "Statutory Compliances",
-    "CFO Services",
-    "Business Valuation",
-  ];
-
-  const rightContent = [
-    [
-      { name: "Accounting & Bookkeeping", link: "/accounting-and-bookkeeping" },
-      { name: "IFRS Compliant", link: "/ifrs-compliance" },
-      { name: "IFRS for SMEs ", link: "/ifrs-for-sme" },
-     
-      
-    ],
-    [
-      { name: "Corporate Tax", link: "/corporate-tax" },
-      { name: "VAT Consultancy", link: "/vat-consultant" },
-      { name: "International Taxation", link: "/international-taxation" },
-      { name: "Excise Duty", link: "/excise-duty" },
-      { name: "Customs", link: "/customs" },
-      
-    ],
-    [
-      { name: "ESR", link: "/esr" },
-      { name: "AML", link: "/aml" },
-      { name: "UBO", link: "/ubo" },
-      { name: "FATCA, CRS", link: "/fatca" },
-
-    ],
-    [
-      { name: "CFO Services", link: "/cfo" },
-      
-    ],
-    [
-      { name: "Business Valuation", link: "/business-valuation" },
-      
-    ],
-  
-    
-  ];
-  
+  const { Menus, MenusDesk } = MenusData;
   return (
-    <div>
-      <CNavbar expand="lg" className="bg-body-tertiary">
-        <CContainer fluid>
-          <div className="navbar-logo">
-            <img src={logoDSB} alt="logo" className="navbarLogo" />
+    <div className="pt-20">
+      <header className="h-20 text-[15px] fixed inset-0 flex-center bg-[#ffffff] z-50 "
+      style={{boxShadow: "rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset",
+        borderBottom: "1.5px solid #ccc"}}>
+        <nav className=" px-3.5 flex-center-between w-full max-w-7xl mx-auto center-text">
+          <div className="flex-center gap-x-1 z-[999] relative">
+            <img src={Logo} alt="" className="w-12" />
+            {/* <h3 className="text-lg font-bold mb-0 text-[24px]"style={{color:"525252"}}>DSB</h3> */}
           </div>
-          <CNavbarToggler
-            aria-label="Toggle navigation"
-            aria-expanded={visible}
-            onClick={() => setVisible(!visible)}
-          />
-          <CCollapse className="navbar-collapse" visible={visible}>
-            <CNavbarNav>
-              <CNavItem>
-                <CNavLink>
-                  <Link
-                    to={"/"}
-                    style={{ textDecoration: "none", color: "#535353" }}
-                  >
-                    Home
-                  </Link>
-                </CNavLink>
-                </CNavItem>
-               
-                
-              <CDropdown
-                variant="nav-item"
-                popper={false}
-                onMouseEnter={() => setServicesDropdownVisible(true)}
-                onMouseLeave={() => setServicesDropdownVisible(false)}
-                visible={servicesDropdownVisible}
-              >
-                <CDropdownToggle>Our Expertise</CDropdownToggle>
-                <CDropdownMenu>
-                  <div className="navbar-dropdown">
-                    <div className="navbar-dropdown-left">
-                      <ul className="navbar-dropdown-left-list">
-                        {services.map((service, index) => (
-                          <li
-                            key={index}
-                            onMouseEnter={() => setHoveredIndex(index)}
-                          >
-                            <span className="navbar-dropdown-text">
-                              {service}
-                            </span>
-                            <FontAwesomeIcon
-                              icon={faChevronRight}
-                              className="arrow-right"
-                            />
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="navbar-dropdown-right">
-                      <ul className="navbar-dropdown-right-list">
-                      {hoveredIndex !== null &&
-                          rightContent[hoveredIndex].map((content, index) => (
-                            <li key={index}>
-                              <Link to={content.link}>{content.name}</Link>
-                            </li>
-                          ))}
-                      </ul>
-                    </div>
-                  </div>
-                </CDropdownMenu>
-              </CDropdown>
-              
-              <CNavItem>
-              <CDropdown variant="nav-item" popper={false}
-                onMouseEnter={() => setLearningHubDropdownVisible(true)}
-                onMouseLeave={() => setLearningHubDropdownVisible(false)}
-                visible={learningHubDropdownVisible}>
-                <CDropdownToggle>Learning Hub</CDropdownToggle>
-                <CDropdownMenu>
-                <div className="navbar-dropdown aboutUs-dropdown">
-                <div className="navbar-dropdown-left aboutUs-dropdown-left">
-                <ul className="navbar-dropdown-left-list aboutUs-dropdown-left-list">
-                <Link to='/learning-hub-ifrs'><li>IFRS</li></Link>
-                <Link to='/learning-hub-corporate-tax'><li>Corporate Tax</li></Link>
-                
-                <Link to='/learning-hub-transfer-pricing'><li>Transfer Pricing</li></Link>
-                <Link to='/learning-hub-vat'><li>VAT</li></Link>
-                <Link to='/learning-hub-esr'><li>ESR</li></Link>
-                <Link to='/learning-hub-commercial-law'><li>Commercial Law</li></Link>
-                <Link to='/learning-hub-aml'><li>AML</li></Link>
-                <Link to='/learning-hub-ubo'><li>UBO</li></Link>
-                <Link to='/learning-hub-blogs'><li>BLOGS</li></Link>
-                </ul>
-                </div>
-                </div>
-                </CDropdownMenu>
-              </CDropdown>
-              </CNavItem>
-              <CNavItem>
-                <CNavLink>
-                  <Link
-                    to={"/events-and-webinar"}
-                    style={{ textDecoration: "none", color: "#535353" }}
-                  >
-                    Events & Webinars
-                  </Link>
-                </CNavLink>
-              </CNavItem>
-              
-              
-              <CNavItem>
-                <CNavLink>
-                  <Link
-                    to={"/newsletter"}
-                    style={{ textDecoration: "none", color: "#535353" }}
-                  >
-                    News Letters
-                  </Link>
-                </CNavLink>
-              </CNavItem>
-              <CNavItem>
-                <CNavLink>
-                  <Link
-                    to={"/contact"}
-                    style={{ textDecoration: "none", color: "#535353" }}
-                  >
-                    Contact Us
-                  </Link>
-                </CNavLink>
-              </CNavItem>
-            </CNavbarNav>
-          </CCollapse>
-        </CContainer>
-      </CNavbar>
+
+          <ul className="gap-x-1 lg:flex-center hidden mb-0 font-medium text-[14px]">
+            {MenusDesk.map((menu) => (
+              <DesktopMenu menu={menu} key={menu.name} />
+            ))}
+          </ul>
+          <div className="flex-center gap-x-5">
+            {/* <button
+              aria-label="sign-in"
+              className="bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
+            >
+              Sign In
+            </button> */}
+            <div className="lg:hidden">
+              <MobMenu Menus={Menus} />
+            </div>
+          </div>
+        </nav>
+      </header>
     </div>
   );
 }
+

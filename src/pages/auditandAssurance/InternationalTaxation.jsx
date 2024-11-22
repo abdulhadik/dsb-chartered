@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import "./AuditAndAssurance.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import WhoWeAreImg from "../../images/dubai-city-landscape.jpg";
+import WhoWeAreImg from "../../images/carousel5.jpg";
 import { Link } from "react-router-dom";
 export default function InternationalTaxation (props) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="AuditHero internal">

@@ -1,0 +1,225 @@
+.upcoming-events-heading h2{
+    color: #58468c;
+		font-size: 3em;
+		font-weight: normal;
+		margin: 10px 0;
+		text-align: center;
+}
+
+ .events-hero{
+    background-image: url('../../images/EventsHero.png');
+   
+ }
+.events-heading{    
+    gap: 10px;
+}
+.events-heading h4{
+    color: white;
+}
+.upcoming-webinars-container{
+    display: flex;
+    padding: 50px;
+    padding-top:0px ;
+    align-items: center;
+}
+.card-webinar{
+    /* height: 400px; */
+    width: 300px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    font-family: "Ubuntu", sans-serif;
+    background-image: url('../../images/BackgroundWebinar.png');
+    background-size: cover;
+    
+
+}
+.card-webinar-caption{
+    background-color: black;
+    width: 200px;
+    height: 25px;
+    color: white;
+    display: flex;
+    font-family: "Ubuntu", sans-serif;
+    align-items: center;  /* Centers text vertically */
+    /* justify-content: center;   */
+    padding: 0;  /* Remove padding to fit height */
+   border-top-right-radius: 50px;
+   border-bottom-right-radius:50px;
+    /* margin-top: 5px; */
+    padding-left: 10px;
+    margin-top: 10px;
+
+}
+.card-webinar-caption h6{
+    text-align: center;
+    margin: 0px;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+}
+.webinar-heading{
+padding: 20px; 
+padding: 20px; 
+display: flex;  
+flex-direction: column; 
+align-items: center;
+gap: 10px;
+font-family: "Ubuntu", sans-serif;
+overflow: hidden; 
+justify-content: center;
+
+}
+.webinar-heading h4{
+    
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    color: #673FD7;
+    font-weight: 600;
+    overflow-wrap: break-word; /* Ensures text wraps */
+    word-break: break-word; /* Additional support for long words */
+}
+.webinar-heading p{
+    margin: 0px;
+    font-family: "Ubuntu", sans-serif;
+    color: #535353;
+}
+.webinar-details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Ubuntu", sans-serif;
+}
+.webinar-details-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+    font-family: "Ubuntu", sans-serif;
+}
+.webinar-details p{
+    margin-bottom: 0px;
+    font-size: 12px;
+    /* color: #673FD7; */
+    color: #535353;
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
+}
+.webinar-details p br{
+    margin: 0;
+}
+/* From Uiverse.io by Creatlydev */ 
+.button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--clr);
+    font-size: 14px;
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 500;
+    padding: 0.4rem .65rem;
+    padding-left: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    background-color: #535353;
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color: #535353;
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+  }
+  .webinar-details-right {
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align content to the bottom */
+    align-items: flex-end; /* Align items to the bottom */
+    height: 100%; /* Make sure it takes the full height of the parent */
+  }
+  
+  .webinar-details-right img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    /* 60% {
+        transform: translateY(-5px);
+    } */
+}
+
+.card-webinar:hover {
+    animation: bounce 1s; /* Apply bounce animation on hover */
+}
+.upcoming-webinars-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px;
+  justify-content: center; /* Center the grid horizontally */
+}
+
+/* Grid changes for different screen sizes */
+@media (max-width: 1200px) {
+  .upcoming-webinars-container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .upcoming-webinars-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  /* On smaller screens, center the cards */
+  .upcoming-webinars-container {
+      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+      align-items: center;       /* Center items vertically */
+      justify-content: center;    /* Center items horizontally */
+                   /* Take full viewport height */
+  }
+}

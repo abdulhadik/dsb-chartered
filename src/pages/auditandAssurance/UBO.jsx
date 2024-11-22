@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
 import "./AuditAndAssurance.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import WhoWeAreImg from "../../images/dubai-city-landscape.jpg";
+import WhoWeAreImg from "../../images/carousel1.jpg";
 import { Link } from "react-router-dom";
 export default function UBO(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
-      <div className="AuditHero internal">
+      <div className="AuditHero Statuatory">
         <div className="AuditHero-text">
           <h4>Taxation</h4>
           <h1>Ultimate Beneficial Owner (UBO) UAE</h1>

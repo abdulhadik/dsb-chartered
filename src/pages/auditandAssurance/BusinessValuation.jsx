@@ -1,19 +1,22 @@
 import React, { useEffect } from "react";
 import "./AuditAndAssurance.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import WhoWeAreImg from "../../images/dubai-city-landscape.jpg";
+import WhoWeAreImg from "../../images/carousel3.jpg";
 import { Link } from "react-router-dom";
 export default function BusinessValuation(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
-      <div className="AuditHero internal">
+      <div className="AuditHero Business">
         <div className="AuditHero-text">
           <h1>Business Valuation Services</h1>
         </div>
       </div>
       <div className="whoweare-container">
         <div className="whoweare-text">
-          <h2>Business Valuation Services by DSB Chartered Accountants</h2>
+          <h2>Business Valuation Services</h2>
         </div>
 
         <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center ">

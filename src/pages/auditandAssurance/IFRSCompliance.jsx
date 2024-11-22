@@ -3,8 +3,11 @@ import "./AuditAndAssurance.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import { Card } from "flowbite-react";
-import WhoWeAreImg from "../../images/dubai-city-landscape.jpg";
+import WhoWeAreImg from "../../images/carousel3.jpg";
 export default function IFRSCompliance(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="AuditHero">

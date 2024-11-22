@@ -15,7 +15,7 @@ export default function WhoWeAre() {
         <div className="col-12 col-lg-6 col-xl-7">
           <div className="row justify-content-xl-between">
             <div className="col-12 col-xl-11">
-              <p className="mb-5 whoweare-p">
+              <p className=" whoweare-p">
                 At DSB Chartered Accountants, we are passionate about driving
                 your financial success by providing top-notch Accounting and
                 Taxation services. As an eminent accounting powerhouse in Dubai,

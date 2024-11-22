@@ -34,23 +34,21 @@
 @media (max-width: 800px) {
   .logo-heading-client {
     font-size: 32px;
-    margin-left: 50px;
-    border-left: 4px solid #455db5ce;
+    margin-left: 20px;  /* Adjust margin to keep the text aligned */
   }
 
   .logo-inner-container {
-    gap: 30px;
+    gap: 25px;  /* Reduce gap for smaller screens */
   }
 }
 
 @media (max-width: 500px) {
   .logo-heading-client {
     font-size: 26px;
-    margin-left: 20px;
-    border-left: 4px solid #455db5ce;
+    margin-left: 10px; /* Further adjust for mobile */
   }
 
   .logo-inner-container {
-    gap: 18px;
+    gap: 15px;  /* Even smaller gap on very small screens */
   }
 }

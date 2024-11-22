@@ -17,15 +17,15 @@ body{
   background-image: url("../../images/Audit2.png");
   background-size: cover;
 }
-.inCountry{
+.Business{
   background-image: url("../../images/Audit3.png");
   background-size: cover;
 }
-.liquidation{
+.cfo{
   background-image: url("../../images/Audit4.png");
   background-size: cover;
 }
-.statutory{
+.Statuatory{
   background-image: url("../../images/Audit5.png");
   background-size: cover;
 }
@@ -79,6 +79,8 @@ body{
   -webkit-text-fill-color: transparent;
   border-left: 8px solid #455db5ce;
   padding-left:10px;
+  text-align: left;
+  margin-bottom: 15px;
 }
 
 
@@ -140,6 +142,7 @@ body{
 }
 
 .audit-text h2 {
+  text-align: left;
   font-size: 38px;
   font-family: "Ubuntu", sans-serif;
   margin: 0%;
@@ -164,6 +167,10 @@ body{
   
 }
 
+.audit-text ul{
+  list-style-type: disc !important; /* Shows bullet points */
+   
+}
 .audit-text ul li{
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
@@ -266,7 +273,14 @@ body{
  
 }
 @media (max-width:800px) {
+  .AuditHero-text h1{
+ 
+    color:white;
   
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size:40px;
+  }
   .audit-text h2{
       font-size: 32px;
   }
@@ -324,5 +338,13 @@ body{
   .Audit-links{
     display:none;
   }
-   
+  .AuditHero-text h1{
+ 
+    color:white;
+  
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size:34px;
+  }
+ 
  }

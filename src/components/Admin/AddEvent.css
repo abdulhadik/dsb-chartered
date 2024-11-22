@@ -1,0 +1,139 @@
+/* Container for the add event form */
+.add-event-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3.AddedUpcomingEvents, h3.AddedCompletedEvents {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Style for the form fields */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Table styling */
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.events-table th, .events-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  max-width: 200px;  /* Limit max width */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;  /* Hide overflow text */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed content */
+}
+
+.events-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.events-table td {
+  word-wrap: break-word; /* Ensure long words break and wrap within the cell */
+}
+
+/* Delete button styling */
+.events-table td button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.events-table td button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .add-event-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  form input,
+  form button {
+    font-size: 14px;
+  }
+
+  .events-table th, .events-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .events-table td button {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .add-event-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  form input,
+  form button {
+    font-size: 12px;
+  }
+
+  .events-table th, .events-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .events-table td button {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+}
