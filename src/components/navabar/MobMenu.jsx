@@ -42,7 +42,6 @@ export default function MobMenu({ Menus }) {
 
             return (
               <li key={name} className="mb-4">
-                {/* Main Menu Item */}
                 {hasSubMenu ? (
                   <span
                     className="flex justify-between items-center  p-2 font-semibold text-[20px] hover:bg-gray-200 rounded-md cursor-pointer" // Added hover:bg-gray-200
@@ -57,12 +56,12 @@ export default function MobMenu({ Menus }) {
                   </span>
                 ) : (
                   <Link
-                    to={link || "#"} // Now uses link or defaults to "#"
+                    to={link || "#"} 
                     className="block p-2 font-semibold text-[20px] hover:bg-gray-200 rounded-md no-underline text-inherit"
                     style={{ textDecoration: "none", color: "inherit" }}
                     onClick={() => {
-                      setIsOpen(false); // Close the menu immediately
-                      setClicked(null); // Reset the submenu state
+                      setIsOpen(false); 
+                      setClicked(null); 
                     }}
                   >
                     {name}
@@ -108,15 +107,14 @@ export default function MobMenu({ Menus }) {
                                 color: "inherit",
                               }}
                               onClick={() => {
-                                setIsOpen(false); // Close the menu immediately
-                                setSubMenuClicked(null); // Reset nested submenu state
+                                setIsOpen(false); 
+                                setSubMenuClicked(null);
                               }}
                             >
                               {name}
                             </Link>
                           )}
 
-                          {/* Nested Submenu */}
                           {subMenu?.length && isSubMenuClicked && (
                             <motion.ul
                               initial="exit"
@@ -128,12 +126,12 @@ export default function MobMenu({ Menus }) {
                                 <li key={name} className="pt-3 ">
                                   <Link
                                     to={link || "#"}
-                                    className="block text-sm font-light text-[14px] hover:bg-gray-200 rounded-md no-underline text-inherit"
+                                    className="block text-sm font-light p-1 text-[14px] hover:bg-gray-200 rounded-md no-underline text-inherit"
                                     style={{
                                       textDecoration: "none",
                                       color: "inherit",
                                     }}
-                                    onClick={() => setIsOpen(false)} // Close the menu when a link is clicked
+                                    onClick={() => setIsOpen(false)}
                                   >
                                     {name}
                                   </Link>

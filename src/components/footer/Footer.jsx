@@ -10,28 +10,24 @@ export default function Footer() {
         <div className="details-services">
           <h3>Links</h3>
           <Link to={"/"} style={{ textDecoration: "none", color: "inherit" }}>
-            {" "}
             <p>Home</p>
           </Link>
           <Link
             to={"/events-and-webinar"}
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            {" "}
             <p>Upcoming Webinars & Events</p>
           </Link>
           <Link
             to={"/completed-events-webinar"}
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            {" "}
             <p>Completed Webinars & Events</p>
           </Link>
           <Link
             to={"/newsletter"}
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            {" "}
             <p>Newsletters</p>
           </Link>
           <Link

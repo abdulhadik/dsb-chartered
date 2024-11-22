@@ -19,10 +19,10 @@ export default function Newsletter() {
       })
       .then(
         () => {
-          toast.success("Message sent successfully!"); // Success toast notification
+          toast.success("Message sent successfully!");
         },
         (error) => {
-          toast.error("Failed to send message. Please try again."); // Error toast notification
+          toast.error("Failed to send message. Please try again.");
           console.log("FAILED...", error.text);
         }
       );
@@ -30,7 +30,7 @@ export default function Newsletter() {
 
   return (
     <div>
-      <Toaster /> {/* To display toast notifications */}
+      <Toaster />
       <div className="wrapper">
         <div className="center-div">
           <div className="heading">

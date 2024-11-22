@@ -16,6 +16,6 @@
   width: auto;
   height: auto;
   z-index: 1;
-  object-fit:cover; /* Ensures the video/image covers the container */
+  object-fit:cover; 
   transform: translate(-50%, -50%);
 }

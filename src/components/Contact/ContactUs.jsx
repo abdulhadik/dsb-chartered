@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Toaster, toast } from 'react-hot-toast'; // Corrected import
+import { Toaster, toast } from 'react-hot-toast'; 
 import "./ContactUs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faHome, faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
@@ -22,10 +22,10 @@ const ContactUs = () => {
       })
       .then(
         () => {
-          toast.success("Message sent successfully!"); // Success toast notification
+          toast.success("Message sent successfully!"); 
         },
         (error) => {
-          toast.error("Failed to send message. Please try again."); // Error toast notification
+          toast.error("Failed to send message. Please try again.");
           console.log("FAILED...", error.text);
         }
       );
@@ -33,7 +33,7 @@ const ContactUs = () => {
 
   return (
     <div className="contact-page">
-      <Toaster /> {/* Toast notification container */}
+      <Toaster /> 
       <section>
         <div className="section-header">
         <div className="heading">

@@ -36,9 +36,7 @@ function Logo() {
 
   return (
     <div className="logo-main-container text-center mt-[50px] mb-[50px]">
-      {/* Clients Section */}
       <h2 className="logo-heading-client">Our Clients</h2>
-
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{
@@ -66,10 +64,7 @@ function Logo() {
           </div>
         </div>
       </motion.div>
-
-      {/* Associates Section */}
       <h2 className="logo-heading-client">Our Associates</h2>
-
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{
@@ -97,10 +92,7 @@ function Logo() {
           </div>
         </div>
       </motion.div>
-
-      {/* Partners Section */}
       <h2 className="logo-heading-client">Our Partners</h2>
-
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{
@@ -131,5 +123,4 @@ function Logo() {
     </div>
   );
 }
-
 export default Logo;

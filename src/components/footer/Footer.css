@@ -9,13 +9,9 @@
     width: auto;
    
 }
-
    .details-container p{
     color: #838181;
    }
-       
-       
-       /* CSS */
        .button-36 {
          background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
          border-radius: 8px;
@@ -100,7 +96,6 @@ gap:3px;
           text-align: left;
         }
    .logos{
-    /* background-color:whi; */
     display:flex;
     padding-inline:40px;
     justify-content:space-around;
@@ -158,7 +153,6 @@ gap:3px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* white-space: none; */
       }
       .hide-on{
 

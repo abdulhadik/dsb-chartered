@@ -23,7 +23,6 @@
     align-items: center;
 }
 .card-webinar{
-    /* height: 400px; */
     width: 300px;
     background-color:rgb(255, 255, 255);
     border-radius: 5px;
@@ -40,12 +39,11 @@
     color: white;
     display: flex;
     font-family: "Ubuntu", sans-serif;
-    align-items: center;  /* Centers text vertically */
-    /* justify-content: center;   */
-    padding: 0;  /* Remove padding to fit height */
+    align-items: center;
+    padding: 0; 
    border-top-right-radius: 50px;
    border-bottom-right-radius:50px;
-    /* margin-top: 5px; */
+
     padding-left: 10px;
     margin-top: 10px;
 
@@ -74,8 +72,8 @@ justify-content: center;
     font-family: "Ubuntu", sans-serif;
     color: #673FD7;
     font-weight: 600;
-    overflow-wrap: break-word; /* Ensures text wraps */
-    word-break: break-word; /* Additional support for long words */
+    overflow-wrap: break-word;
+    word-break: break-word; 
 }
 .webinar-heading p{
     margin: 0px;
@@ -98,7 +96,6 @@ justify-content: center;
 .webinar-details p{
     margin-bottom: 0px;
     font-size: 12px;
-    /* color: #673FD7; */
     color: #535353;
     font-weight: 500;
     font-family: "Ubuntu", sans-serif;
@@ -106,7 +103,6 @@ justify-content: center;
 .webinar-details p br{
     margin: 0;
 }
-/* From Uiverse.io by Creatlydev */ 
 .button {
     line-height: 1;
     text-decoration: none;
@@ -166,15 +162,12 @@ justify-content: center;
     transform: translate(0);
   }
   .webinar-details-right {
-    display: flex; /* Use flexbox */
-    justify-content: flex-end; /* Align content to the bottom */
-    align-items: flex-end; /* Align items to the bottom */
-    height: 100%; /* Make sure it takes the full height of the parent */
-  }
-  
-  .webinar-details-right img {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    max-width: 100%;
+    height: auto;
   }
   @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -183,23 +176,18 @@ justify-content: center;
     40% {
         transform: translateY(-10px);
     }
-    /* 60% {
-        transform: translateY(-5px);
-    } */
 }
 
 .card-webinar:hover {
-    animation: bounce 1s; /* Apply bounce animation on hover */
+    animation: bounce 1s;
 }
 .upcoming-webinars-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 50px;
-  justify-content: center; /* Center the grid horizontally */
+  justify-content: center;
 }
-
-/* Grid changes for different screen sizes */
 @media (max-width: 1200px) {
   .upcoming-webinars-container {
       grid-template-columns: repeat(3, 1fr);
@@ -213,13 +201,12 @@ justify-content: center;
 }
 
 @media (max-width: 576px) {
-  /* On smaller screens, center the cards */
   .upcoming-webinars-container {
       grid-template-columns: 1fr;
       display: flex;
       flex-direction: column;
-      align-items: center;       /* Center items vertically */
-      justify-content: center;    /* Center items horizontally */
-                   /* Take full viewport height */
+      align-items: center;       
+      justify-content: center;    
+                   
   }
 }

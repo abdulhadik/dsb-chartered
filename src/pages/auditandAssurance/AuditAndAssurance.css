@@ -1,7 +1,4 @@
-body{
-    background-color: #BBE9FF;
-    scroll-behavior: smooth;
-}
+
 .AuditHero{
   height:90vh;
   background-image: url("../../images/Audit1.png");
@@ -73,7 +70,6 @@ body{
   font-family: "Ubuntu", sans-serif;
   margin: 0%;
   display: inline-block;
-  /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -129,7 +125,6 @@ body{
   }
   .whoweare-p{
       font-size: 14px;
-      
   }
  
   
@@ -147,7 +142,6 @@ body{
   font-family: "Ubuntu", sans-serif;
   margin: 0%;
   display: inline-block;
-  /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -168,8 +162,7 @@ body{
 }
 
 .audit-text ul{
-  list-style-type: disc !important; /* Shows bullet points */
-   
+  list-style-type: disc !important;
 }
 .audit-text ul li{
   font-size: 18px;

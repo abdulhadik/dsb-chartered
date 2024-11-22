@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react';
-import ifrsImage from '../images/learningHub/8.png'; // Adjust the path to your image file
-
+import ifrsImage from '../images/learningHub/8.png'; 
 export default function LearningHubVAT() {
   useEffect(() => {
     window.scrollTo(0, 0);

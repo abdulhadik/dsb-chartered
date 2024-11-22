@@ -1,15 +1,11 @@
-import React,{ useEffect} from "react";
-
-// import WhatWeDo from "../../components/what-we-do/WhatWeDo";
+import React, { useEffect } from "react";
 import "./Main.css";
 import Expertise from "../../components/expertise/Expertise.jsx";
 import CodeOfEthics from "../../components/codeOfEthics/CodeOfEthics.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import CodeOfEthicsImg from "../../images/codeofethics.jpg";
 import Logo from "../../components/logos/Logo.jsx";
-import Hero from '../../components/Hero/Hero.jsx';
-
+import Hero from "../../components/Hero/Hero.jsx";
 import WhoWeAre from "../../components/whoWeAre/WhoWeAre.jsx";
 function Main() {
   useEffect(() => {
@@ -18,8 +14,7 @@ function Main() {
   return (
     <div className="main-container">
       <div className="main-first">
-        {/* <Carousel className="custom-carousel" /> */}
-        <Hero/>
+        <Hero />
       </div>
       <WhoWeAre />
       <div className="team-container">
@@ -36,7 +31,6 @@ function Main() {
           </p>
         </div>
       </div>
-     
       <CodeOfEthics />
       <Expertise />
       <div className="call">
@@ -47,14 +41,12 @@ function Main() {
             </h1>
             <p>To ensure clients progress financially and Socially</p>
           </div>
-          <Link  to={"/contact"}
-                    style={{ textDecoration: "none" }}><button>Contact Us</button></Link>
+          <Link to={"/contact"} style={{ textDecoration: "none" }}>
+            <button>Contact Us</button>
+          </Link>
         </div>
-      </div>{" "}
-      {/* Closing tag for the div with className="call" */}
+      </div>
       <Logo />
-      
-      
     </div>
   );
 }

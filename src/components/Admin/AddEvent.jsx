@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./AddEvent.css"; // Ensure to import your CSS styles
+import "./AddEvent.css"; 
 
 function AddEvent() {
   const [upcomingEvent, setUpcomingEvent] = useState({
@@ -131,7 +131,7 @@ function AddEvent() {
 
   return (
     <div>
-      {/* Upcoming Events Form */}
+ 
       <div className="add-event-container">
         <h2>Add Upcoming Event</h2>
         <form onSubmit={handleUpcomingSubmit}>
@@ -217,8 +217,6 @@ function AddEvent() {
           </tbody>
         </table>
       </div>
-
-      {/* Completed Events Form */}
       <div className="add-event-container">
         <h2>Add Completed Event</h2>
         <form onSubmit={handleCompletedSubmit}>
@@ -279,7 +277,6 @@ function AddEvent() {
           />
           <button type="submit">Add Completed Event</button>
         </form>
-
         <h3 className="AddedCompletedEvents">Added Completed Events</h3>
         <table className="events-table">
           <thead>

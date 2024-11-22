@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./AuditAndAssurance.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
-import { Card } from "flowbite-react";
 import WhoWeAreImg from "../../images/carousel3.jpg";
+
 export default function AccountingAndBookkeeping(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,7 +15,6 @@ export default function AccountingAndBookkeeping(props) {
           <h4>Accounting & Financial Reporting</h4>
           <h1>Accounting & Bookkeeping</h1>
         </div>
-        
       </div>
       <div className="whoweare-container">
         <div className="whoweare-text">
@@ -164,8 +163,9 @@ export default function AccountingAndBookkeeping(props) {
             <h1>Partner with the Top !</h1>
             <p>Accounting & Bookkeeping Specialists in Dubai, UAE.</p>
           </div>
-          <Link  to={"/contact"}
-                    style={{ textDecoration: "none" }}><button>Contact Us</button></Link>
+          <Link to={"/contact"} style={{ textDecoration: "none" }}>
+            <button>Contact Us</button>
+          </Link>
         </div>
       </div>
     </div>

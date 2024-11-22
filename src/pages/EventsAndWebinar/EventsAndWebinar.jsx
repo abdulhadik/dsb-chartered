@@ -26,15 +26,6 @@ export default function EventsAndWebinar() {
 
   return (
     <div>
-      {/* <div className="AuditHero internal events-hero">
-        <div className="events-heading AuditHero-text">
-          <h1>Events and Webinars</h1>
-          <h4>
-            Check the schedule below for a full list of upcoming webinars and
-            events, as well as on-demand webinars you can watch at your leisure.
-          </h4>
-        </div>
-      </div> */}
       <div className="upcoming-events-heading">
         <br />
         <br />

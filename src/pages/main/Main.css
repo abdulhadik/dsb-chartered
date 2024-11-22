@@ -27,8 +27,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
-
-  /* Create the gradient. */
 }
 
 .company-profile h1 {
@@ -52,8 +50,8 @@ body {
   background-image: url("../../images/dubai-city-landscape.jpg");
   background-size: cover;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: flex-end; /* Align to the bottom */
+  justify-content: center;
+  align-items: flex-end;
   margin-top: 50px;
 }
 
@@ -66,7 +64,7 @@ body {
   height: 250px;
   background-color: hsla(0, 0%, 6%, 0.9);
   display: flex;
-  flex-direction: row; /* Optional: If you want to use Flexbox inside this div too */
+  flex-direction: row;
   align-items: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -86,8 +84,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   color: #7f8c8d;
   margin: 0%;
-  display: inline-block; /* To ensure box-shadow works properly */
-  /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
+  display: inline-block; 
   background-image: linear-gradient(
     92.88deg,
     #455eb5 9.16%,
@@ -116,14 +113,11 @@ body {
   background-size: 200% auto;
   border-radius: 10px;
   border: 1px solid #5643cc;
-  /* border: 1px solid #FF512F; */
   display: block;
   border: 0px;
   background-color: white;
   font-weight: 600;
-  /* box-shadow: 0px 0px 14px -7px #f09819; */
   box-shadow: 0px 0px 14px -7px #673fd7;
-  /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%); */
   background-image: linear-gradient(
     92.88deg,
     #455eb5 9.16%,
@@ -139,7 +133,6 @@ body {
 
 .inside-call button:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
@@ -147,8 +140,6 @@ body {
 .inside-call button:active {
   transform: scale(0.95);
 }
-/* Existing styles... */
-
 @media (max-width: 1024px) {
   .company-profile h3 {
     font-size: 26px;
@@ -278,7 +269,6 @@ body {
   font-family: "Ubuntu", sans-serif;
   margin: 0%;
   display: inline-block;
-  /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

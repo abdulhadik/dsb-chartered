@@ -8,21 +8,17 @@ export default function ESR(props) {
     window.scrollTo(0, 0);
   }, []);
   return (
-    
     <div>
       <div className="AuditHero Statuatory">
         <div className="AuditHero-text">
           <h4>Statutory Compliances</h4>
           <h1>The Economic Substance Regulations (ESR)</h1>
         </div>
-
-        
       </div>
       <div className="whoweare-container">
         <div className="whoweare-text">
           <h2>Economic Substance Regulations(ESR) Dubai UAE</h2>
         </div>
-
         <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center ">
           <div className="col-12 col-lg-6 col-xl-7">
             <div className="row justify-content-xl-between">
@@ -108,8 +104,9 @@ export default function ESR(props) {
             <h1>Partner with the Top !</h1>
             <p>ESR Specialists in Dubai, UAE.</p>
           </div>
-          <Link  to={"/contact"}
-                    style={{ textDecoration: "none" }}><button>Contact Us</button></Link>
+          <Link to={"/contact"} style={{ textDecoration: "none" }}>
+            <button>Contact Us</button>
+          </Link>
         </div>
       </div>
     </div>

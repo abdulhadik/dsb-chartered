@@ -1,30 +1,28 @@
-/* .container-service{
-  display: flex;
-  align-items: center;
-}*/
-.services-button{
-  
+.services-button {
   margin-top: 20px;
-  padding: 10px 20px ;
-  text-align: center ;
-  text-transform: uppercase ;
-  transition: 0.5s ;
-  background-size: 200% auto ;
-  color: white ;
-  border-radius: 10px ;
-  display: block ;
-  border: 0px ;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
   font-weight: 600;
-  font-family:"Ubuntu", sans-serif;
-  /* box-shadow: 0px 0px 14px -7px #f09819; */
-  box-shadow: 0px 0px 14px -7px #673FD7 ;
-  /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%); */
-  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%) !important;
+  font-family: "Ubuntu", sans-serif;
+  box-shadow: 0px 0px 14px -7px #673fd7;
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  ) !important;
 
-  cursor: pointer ;
-  user-select: none ;
-  -webkit-user-select: none ;
-  touch-action: manipulation ;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 .servicePara-container {
@@ -32,44 +30,45 @@
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  
   margin-top: 50px;
-font-family: "Ubuntu", sans-serif;
-/* border: 3px solid rgb(194, 192, 192); */
-/* border-radius: 20px; */
-margin-inline: 50px;
-margin-bottom: 50px;
-/* box-shadow: inset 0 0 40px rgb(194, 192, 192); */
+  font-family: "Ubuntu", sans-serif;
+  margin-inline: 50px;
+  margin-bottom: 50px;
 }
 .audit-image {
-  height:350px;
+  height: 350px;
   width: auto;
   padding-right: 20px;
 }
-.left-text{
-    padding-right: 50px;
+.left-text {
+  padding-right: 50px;
 }
-.left-text h2{
-    margin-bottom: 20px;
-    /* background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
-    font-size: 38px; 
-    /* color: #0A2540; */
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.left-text h2 {
+  margin-bottom: 20px;
+  font-size: 38px;
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.left-text p{
-    color: #425460;
+.left-text p {
+  color: #425460;
 }
-.offcanvas-innerlinks{
+.offcanvas-innerlinks {
   display: flex;
   flex-direction: row;
-
 }
-.offcanvas-header{
-  background: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-  color: white; 
-  font-family:"Ubuntu", sans-serif;
+.offcanvas-header {
+  background: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  color: white;
+  font-family: "Ubuntu", sans-serif;
 }

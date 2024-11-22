@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react';
-import ifrsImage from '../images/learningHub/2.png'; // Adjust the path to your image file
-
+import ifrsImage from '../images/learningHub/2.png';
 export default function LearningHubCorporateTax() {
   useEffect(() => {
     window.scrollTo(0, 0);

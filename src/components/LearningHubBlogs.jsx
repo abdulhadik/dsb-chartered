@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-import ifrsImage from '../images/learningHub/9.png'; // Adjust the path to your image file
+import ifrsImage from '../images/learningHub/9.png';
 
 export default function LearningHubBlogs() {
   useEffect(() => {

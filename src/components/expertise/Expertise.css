@@ -1,17 +1,13 @@
 .expertise-container {
     padding: 50px;
     padding-top: 0px;
-    padding-bottom: 0px;
-  
-    
+    padding-bottom: 0px; 
 }
-
 .expertise-text h2 {
     font-size: 38px;
     font-family: "Ubuntu", sans-serif;
     margin: 0%;
     display: inline-block;
-    /* background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%); */
     background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -14,8 +14,6 @@ export default function ExciseTax(props) {
           <h4>Taxation</h4>
           <h1>Excise Duty</h1>
         </div>
-
-        
       </div>
       <div className="whoweare-container">
         <div className="whoweare-text">

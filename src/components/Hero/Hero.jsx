@@ -1,17 +1,16 @@
-// src/Hero.js
-import React, { useState, useEffect } from 'react';
-import './Hero.css';
+import React, { useState, useEffect } from "react";
+import "./Hero.css";
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [videoSrc, setVideoSrc] = useState('/Dsb.mp4');
+  const [videoSrc, setVideoSrc] = useState("/Dsb.mp4");
 
   const updateMedia = () => {
     if (window.innerWidth < 500) {
-      setIsMobile(true); // Show the image for mobile devices
+      setIsMobile(true);
     } else {
-      setIsMobile(false); // Show the video for larger devices
-      setVideoSrc(window.innerWidth < 800 ? '/Dsb-tab.mp4' : '/Dsb.mp4');
+      setIsMobile(false);
+      setVideoSrc(window.innerWidth < 800 ? "/Dsb-tab.mp4" : "/Dsb.mp4");
     }
   };
 
@@ -19,9 +18,9 @@ const Hero = () => {
     updateMedia();
     const handleResize = () => updateMedia();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -39,11 +38,11 @@ const Hero = () => {
           autoPlay
           loop
           muted
-          playsInline // Ensure compatibility with iOS Safari
+          playsInline
           className="hero-video"
         >
           <source src={videoSrc} type="video/mp4" />
-          <source src={videoSrc.replace('.mp4', '.webm')} type="video/webm" />
+          <source src={videoSrc.replace(".mp4", ".webm")} type="video/webm" />
           Your browser does not support the video tag.
         </video>
       )}

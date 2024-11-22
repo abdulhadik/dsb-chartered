@@ -4,32 +4,26 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function DesktopMenu({ menu }) {
-  const [isHover, toggleHover] = useState(false); // Main menu hover state
-  const [isSubMenuHover, setIsSubMenuHover] = useState(false); // Submenu hover state
+  const [isHover, toggleHover] = useState(false);
+  const [isSubMenuHover, setIsSubMenuHover] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
-
-  // Main menu hover events
   const handleMouseEnter = () => {
     toggleHover(true);
   };
 
   const handleMouseLeave = () => {
-    if (!isSubMenuHover) { // Close main menu if submenu is not hovered
+    if (!isSubMenuHover) { 
       toggleHover(false);
     }
   };
-
-  // Submenu hover events
   const handleSubMenuMouseEnter = () => {
-    setIsSubMenuHover(true); // Keep submenu open
+    setIsSubMenuHover(true);
   };
 
   const handleSubMenuMouseLeave = () => {
-    setIsSubMenuHover(false); // Close submenu when mouse leaves
-    toggleHover(false); // Close the main menu as well when submenu is no longer hovered
+    setIsSubMenuHover(false); 
+    toggleHover(false); 
   };
-
-  // Animation for submenu
   const subMenuAnimate = {
     enter: {
       opacity: 1,
@@ -56,8 +50,8 @@ export default function DesktopMenu({ menu }) {
   return (
     <motion.li
       className="group/link"
-      onMouseEnter={handleMouseEnter} // Main menu hover
-      onMouseLeave={handleMouseLeave} // Close main menu when mouse leaves
+      onMouseEnter={handleMouseEnter} 
+      onMouseLeave={handleMouseLeave} 
       key={menu.name}
     >
       <span className="flex-center gap-1 hover:bg-white/5 cursor-pointer px-3 py-1 rounded-xl">
@@ -72,10 +66,10 @@ export default function DesktopMenu({ menu }) {
         <motion.div
           className="sub-menu bg-white/70"
           initial="exit"
-          animate={isHover || isSubMenuHover ? "enter" : "exit"} // Show submenu if either main menu or submenu is hovered
+          animate={isHover || isSubMenuHover ? "enter" : "exit"} 
           variants={subMenuAnimate}
-          onMouseEnter={handleSubMenuMouseEnter} // Keep submenu open when hovered
-          onMouseLeave={handleSubMenuMouseLeave} // Close submenu when mouse leaves
+          onMouseEnter={handleSubMenuMouseEnter} 
+          onMouseLeave={handleSubMenuMouseLeave} 
         >
           <div
             className={`grid gap-2 ${
